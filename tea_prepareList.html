@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>备课列表</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/tt_style.css">
+    <link rel="Shortcut Icon" href="images/logo.ico">
+    <script type="text/javascript" src="editor/kindeditor.js"></script>
+	
+    
+</head>
+<body style='height:2000px;'>
+    <script type="text/javascript">
+    KE.show({
+        id : 'content7',
+        cssPath : './index.css'
+    });
+  </script>
+  
+  <div class="top">
+	
+		<div id='t_top'>
+		<div class='t_top'>
+			<div class='t_logo'></div>
+			<ul class='t_nav'>
+				<li><a href="tea_index.html" class="active">我的课程</a></li>
+				<li><a href="tea_admin_notice.html">管理员公告</a></li>
+			</ul>
+			<div class='t_user'>
+				<span><a href="">消息<i>10</i></a></span>
+				<div ><img src='images/img14.png' id='t_user'></div>
+			</div>
+		</div>	
+	</div>
+	
+		<div id='t_list'>
+			<div id='t_list_top'>
+				<img src='images/img14.png'>
+				<div class='t_list_top'>
+					<span>用户名lpoiiiiiiiiiii</span>
+					<p>讲师</p>
+				</div>
+			</div>
+			<ul>
+				<li><a href="tea_center.html">个人中心</a></li>
+				<li><a href="">退出</a></li>
+			</ul>
+		</div>
+	
+
+<script src="js/tt_javaScript.js"></script>
+<script type="text/javascript">
+	t_top();
+</script>
+
+	
+	
+	
+	</div>
+	<div class="left">
+		<ul id='t_leftul'>
+		<li id="dao"><a href="">导航</a></li>
+		<li><a href="">当前课程:&nbsp;&nbsp;&nbsp;计算机</a></li>
+		<li><a href="tea_notice.html">公告</a></li>
+		<li><a href="tea_prepareList.html">在线备课</a></li>
+		<li><a href="tea_classedit.html">编辑课程</a></li>
+		<li><a href="tea_data.html">课程资料</a></li>
+		<li><a href="tea_student.html">学生管理</a></li>
+		<li><a href="tea_learning_management.html">学习管理</a></li>
+		<li><a href="tea_courseEdit.html">课程管理</a></li>
+		<li><a href="tea_upload.html">上传资料</a></li>
+		<li><a href="tea_talk.html">讨论区</a></li>
+	</ul>
+	<script src="js/t_javaScript.js"></script>
+	<script type="text/javascript">
+		t_left();
+	</script>
+	</div>
+	
+	
+   <div class="mainbody">
+    
+   <div class="formbody">
+	<div class="place">
+	    <span>位置：</span>
+	    <ul class="placeul">
+		    <li><a href="#">我的课程</a></li>
+		    <li><a href="#" class='active'>在线备课</a></li>
+	    </ul>
+    </div> 	
+<div class='prepareListBox' id='prepareListBox'>
+        <div class='chapter'>
+            <h3> 
+                <strong><i class='chapterImg'></i>第一章 计算机文化基础计算机文化基础计算机文化基础</strong>
+                <div class='chapterR'>
+                    <span>最近更新</span><b>第二大节</b>
+                </div>
+            </h3>
+            <ul class='section'>
+                <li >
+                    <strong>
+                        <i class='sectionImg'></i>
+                        1-1 计算机文化基础计算机文化基础计算机文化基础计算机文化基础
+                    </strong>
+                    <div class='sectionR'>
+                        <span title='内容' onclick='showContent();'>内容</span>
+                        <span title='视频' onclick='showVideo();'>视频</span>
+                        <span title='资料' onclick='showData();'>资料</span>
+                        <span title='作业' onclick='showHomework();'>作业</span>
+                        <span title='测验' onclick='showTest();'>测验</span>
+                        <span title='发布' onclick='showRelease();'>发布</span>
+                    </div>
+                </li>
+               
+                <li>
+                    <strong>
+                        <i class='sectionImg'></i>
+                        1-2 计算机文化基础
+                    </strong>
+                    <div class='sectionR'>
+                        <span title='内容' onclick='showContent();'>内容</span>
+                        <span title='视频' onclick='showVideo();'>视频</span>
+                        <span title='资料' onclick='showData();'>资料</span>
+                        <span title='作业' onclick='showHomework();'>作业</span>
+                        <span title='测验' onclick='showTest();'>测验</span>
+                        <span title='发布' onclick='showRelease();'>发布</span>
+                    </div>
+                </li>
+                <li>
+                    <strong>
+                         <i class='sectionImg'></i>
+                        1-3 计算机文化基础
+                    </strong>
+                    <div class='sectionR'>
+                       <span title='内容' onclick='showContent();'>内容</span>
+                        <span title='视频' onclick='showVideo();'>视频</span>
+                        <span title='资料' onclick='showData();'>资料</span>
+                        <span title='作业' onclick='showHomework();'>作业</span>
+                        <span title='测验' onclick='showTest();'>测验</span>
+                        <span title='发布' onclick='showRelease();'>发布</span>
+                    </div>
+                </li>
+                 <li>
+                    <strong>
+                        <i class='sectionImg'></i>
+                        1-3 计算机文化基础
+                    </strong>
+                    <div class='sectionR'>
+                        <span title='内容' onclick='showContent();'>内容</span>
+                        <span title='视频' onclick='showVideo();'>视频</span>
+                        <span title='资料' onclick='showData();'>资料</span>
+                        <span title='作业' onclick='showHomework();'>作业</span>
+                        <span title='测验' onclick='showTest();'>测验</span>
+                        <span title='发布' onclick='showRelease();'>发布</span>
+                    </div>
+                </li>
+                 <li>
+                    <strong>
+                        <i class='sectionImg'></i>
+                        1-3 计算机文化基础
+                    </strong>
+                    <div class='sectionR'>
+                        <span title='内容' onclick='showContent();'>内容</span>
+                        <span title='视频' onclick='showVideo();'>视频</span>
+                        <span title='资料' onclick='showData();'>资料</span>
+                        <span title='作业' onclick='showHomework();'>作业</span>
+                        <span title='测验' onclick='showTest();'>测验</span>
+                        <span title='发布' onclick='showRelease();'>发布</span>
+                    </div>
+                </li>
+                 <li>
+                    <strong>
+                        <i class='sectionImg'></i>
+                        1-3 计算机文化基础
+                    </strong>
+                    <div class='sectionR'>
+                         <span title='内容' onclick='showContent();'>内容</span>
+                        <span title='视频' onclick='showVideo();'>视频</span>
+                        <span title='资料' onclick='showData();'>资料</span>
+                        <span title='作业' onclick='showHomework();'>作业</span>
+                        <span title='测验' onclick='showTest();'>测验</span>
+                        <span title='发布' onclick='showRelease();'>发布</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class='chapter'>
+            <h3 > 
+                <strong><i class='chapterImg'></i>第一章 计算机文化基础计算机文化基础计算机文化基础</strong>
+                <div class='chapterR'>
+                    <span>最近更新</span><b>第二大节</b>
+                </div>
+            </h3>
+            <ul class='section'>
+                <li >
+                    <strong>
+                         <i class='sectionImg'></i>
+                        1-1 计算机文化基础计算机文化基础计算机文化基础计算机文化基础
+                    </strong>
+                    <div class='sectionR'>
+                        <span title='内容' onclick='showContent();'>内容</span>
+                        <span title='视频' onclick='showVideo();'>视频</span>
+                        <span title='资料' onclick='showData();'>资料</span>
+                        <span title='作业' onclick='showHomework();'>作业</span>
+                        <span title='测验' onclick='showTest();'>测验</span>
+                        <span title='发布' onclick='showRelease();'>发布</span>
+                    </div>
+                </li>
+                <li>
+                    <strong>
+                         <i class='sectionImg'></i>
+                        1-2 计算机文化基础
+                    </strong>
+                    <div class='sectionR'>
+                        <span title='内容' onclick='showContent();'>内容</span>
+                        <span title='视频' onclick='showVideo();'>视频</span>
+                        <span title='资料' onclick='showData();'>资料</span>
+                        <span title='作业' onclick='showHomework();'>作业</span>
+                        <span title='测验' onclick='showTest();'>测验</span>
+                        <span title='发布' onclick='showRelease();'>发布</span>
+                    </div>
+                </li>
+                <li>
+                    <strong>
+                        <i class='sectionImg'></i>
+                        1-3 计算机文化基础
+                    </strong>
+                    <div class='sectionR'>
+                        <span title='内容' onclick='showContent();'>内容</span>
+                        <span title='视频' onclick='showVideo();'>视频</span>
+                        <span title='资料' onclick='showData();'>资料</span>
+                        <span title='作业' onclick='showHomework();'>作业</span>
+                        <span title='测验' onclick='showTest();'>测验</span>
+                        <span title='发布' onclick='showRelease();'>发布</span>
+                    </div>
+                </li>
+                <li>
+                    <strong>
+                        <i class='sectionImg'></i>
+                        1-3 计算机文化基础
+                    </strong>
+                    <div class='sectionR'>
+                        <span title='内容' onclick='showContent();'>内容</span>
+                        <span title='视频' onclick='showVideo();'>视频</span>
+                        <span title='资料' onclick='showData();'>资料</span>
+                        <span title='作业' onclick='showHomework();'>作业</span>
+                        <span title='测验' onclick='showTest();'>测验</span>
+                        <span title='发布' onclick='showRelease();'>发布</span>
+                    </div>
+                </li>
+                 <li>
+                    <strong>
+                        <i class='sectionImg'></i>
+                        1-3 计算机文化基础
+                    </strong>
+                    <div class='sectionR'>
+                         <span title='内容' onclick='showContent();'>内容</span>
+                        <span title='视频' onclick='showVideo();'>视频</span>
+                        <span title='资料' onclick='showData();'>资料</span>
+                        <span title='作业' onclick='showHomework();'>作业</span>
+                        <span title='测验' onclick='showTest();'>测验</span>
+                        <span title='发布' onclick='showRelease();'>发布</span>
+                    </div>
+                </li>
+                 <li>
+                    <strong>
+                        <i class='sectionImg'></i>
+                        1-3 计算机文化基础
+                    </strong>
+                    <div class='sectionR'>
+                         <span title='内容' onclick='showContent();'>内容</span>
+                        <span title='视频' onclick='showVideo();'>视频</span>
+                        <span title='资料' onclick='showData();'>资料</span>
+                        <span title='作业' onclick='showHomework();'>作业</span>
+                        <span title='测验' onclick='showTest();'>测验</span>
+                        <span title='发布' onclick='showRelease();'>发布</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class='chapter'>
+            <h3 > 
+                <strong><i class='chapterImg'></i>第一章 计算机文化基础计算机文化基础计算机文化基础</strong>
+                <div class='chapterR'>
+                    <span>最近更新</span><b>第二大节</b>
+                </div>
+            </h3>
+            <ul class='section'>
+                <li >
+                    <strong>
+                         <i class='sectionImg'></i>
+                        1-1 计算机文化基础计算机文化基础计算机文化基础计算机文化基础
+                    </strong>
+                    <div class='sectionR'>
+                       <span title='内容' onclick='showContent();'>内容</span>
+                        <span title='视频' onclick='showVideo();'>视频</span>
+                        <span title='资料' onclick='showData();'>资料</span>
+                        <span title='作业' onclick='showHomework();'>作业</span>
+                        <span title='测验' onclick='showTest();'>测验</span>
+                        <span title='发布' onclick='showRelease();'>发布</span>
+                    </div>
+                </li>
+                <li>
+                    <strong>
+                         <i class='sectionImg'></i>
+                        1-2 计算机文化基础
+                    </strong>
+                    <div class='sectionR'>
+                       <span title='内容' onclick='showContent();'>内容</span>
+                        <span title='视频' onclick='showVideo();'>视频</span>
+                        <span title='资料' onclick='showData();'>资料</span>
+                        <span title='作业' onclick='showHomework();'>作业</span>
+                        <span title='测验' onclick='showTest();'>测验</span>
+                        <span title='发布' onclick='showRelease();'>发布</span>
+                    </div>
+                </li>
+                <li>
+                    <strong>
+                         <i class='sectionImg'></i>
+                        1-3 计算机文化基础
+                    </strong>
+                    <div class='sectionR'>
+                        <span title='内容' onclick='showContent();'>内容</span>
+                        <span title='视频' onclick='showVideo();'>视频</span>
+                        <span title='资料' onclick='showData();'>资料</span>
+                        <span title='作业' onclick='showHomework();'>作业</span>
+                        <span title='测验' onclick='showTest();'>测验</span>
+                        <span title='发布' onclick='showRelease();'>发布</span>
+                    </div>
+                </li>
+                <li>
+                    <strong> 
+                        <i class='sectionImg'></i>
+                        1-4 计算机文化基础
+                    </strong>
+                    <div class='sectionR'>
+                        <span title='内容' onclick='showContent();'>内容</span>
+                        <span title='视频' onclick='showVideo();'>视频</span>
+                        <span title='资料' onclick='showData();'>资料</span>
+                        <span title='作业' onclick='showHomework();'>作业</span>
+                        <span title='测验' onclick='showTest();'>测验</span>
+                        <span title='发布' onclick='showRelease();'>发布</span>
+                    </div>
+                </li>
+                <li>
+                    <strong> 
+                        <i class='sectionImg'></i>
+                        1-5 计算机文化基础
+                    </strong>
+                    <div class='sectionR'>
+                        <span title='内容' onclick='showContent();'>内容</span>
+                        <span title='视频' onclick='showVideo();'>视频</span>
+                        <span title='资料' onclick='showData();'>资料</span>
+                        <span title='作业' onclick='showHomework();'>作业</span>
+                        <span title='测验' onclick='showTest();'>测验</span>
+                        <span title='发布' onclick='showRelease();'>发布</span>
+                    </div>
+                </li>
+                <li>
+                    <strong> 
+                        <i class='sectionImg'></i>
+                        1-6 计算机文化基础
+                    </strong>
+                    <div class='sectionR'>
+                       <span title='内容' onclick='showContent();'>内容</span>
+                        <span title='视频' onclick='showVideo();'>视频</span>
+                        <span title='资料' onclick='showData();'>资料</span>
+                        <span title='作业' onclick='showHomework();'>作业</span>
+                        <span title='测验' onclick='showTest();'>测验</span>
+                        <span title='发布' onclick='showRelease();'>发布</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+</div>
+<!-- 
+<div class='mask'></div>
+<div class='content'>
+    <div class='content'>
+        <div class='playTitle'>本章内容</div>
+    </div>
+    <div id='close'></div>
+</div>
+ -->
+ <div id='boxSet'>
+     <div class='layerThickness' id='showContent'>
+         <div class='playTitle' id='contentTitle'> 
+            本章内容
+           <a href="javascript:hidden();"class='close'></a>
+         </div>
+         <div class='playCon'>
+            
+              <textarea id="content7" name="content" style="width:600px;height:250px;visibility:hidden;"></textarea>
+           
+         </div>
+         <div  class='boxSetButton'> 
+            <input name="" type="button" class="btn" value="确定"/>
+            <a href="javascript:hidden();"><input name="" type="button" class="btn" value="取消"/></a>
+         </div>
+     </div>
+
+    <div class='layerThickness' id='showVideo' >
+        <div class='playTitle' id='videoTitle'> 
+           本章视频
+           <a href="javascript:hidden();"class='close'></a>
+        </div>
+        <div class='playCon'>
+            
+                <form id="uploadVideo" action="file.jsp">
+                  <table border="0" class="fu_list" >
+                    <thead>
+                      <tr>
+                        <td colspan="2"><b>上传文件</b></td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td align="right" width="15%" style="line-height:35px;">添加文件：</td>
+                        <td><a href="javascript:void(0);" class="files" id="idVideo"></a> <img id="idProcessVideo" style="display:none;" src="img/loading.gif" /></td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">
+                            <table border="0" >
+                                <thead>
+                                  <tr>
+                                    <td><b>文件路径</b></td>
+                                    <td width="200"></td> 
+
+                                  </tr>
+                                </thead>
+                                <tbody id="idFileListVideo">
+                                </tbody>
+                             </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" style="color:red">温馨提示：最多可同时上传 <b id="idLimitVideo"></b> 个文件，只允许上传 <b id="idExtVideo"></b> 文件。 </td>
+                      </tr>
+                      
+                     <tr >
+                       <td colspan="2" align="center" id="idMsgVideo"  style='padding-bottom:0;'>
+                        <div class='boxSetButton'>
+                            <input type="button" value="开始上传"  id="idBtnuploadVideo" disabled="disabled" class="btn" />
+                                 &nbsp;&nbsp;&nbsp;
+                            <input type="button" value="全部取消" id="idBtndelVideo" disabled="disabled" class="btn"/>
+                        </div>
+                       </td>
+                     </tr>
+                     
+                    </tbody>
+                  </table>
+                </form>
+        
+        </div>
+
+    </div>
+    <div class='layerThickness' id='showData'>
+        <div class='playTitle' id='dataTitle'> 
+           本章资料
+           <a href="javascript:hidden();"class='close'></a>
+        </div>
+        <div class='playCon'>
+          <form id="uploadData" action="file.jsp">
+                <table border="0" class="fu_list">
+                  <thead>
+                    <tr>
+                      <td colspan="2"><b>上传文件</b></td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td align="right" width="15%" style="line-height:35px;">添加文件：</td>
+                      <td><a href="javascript:void(0);" class="files" id="idData"></a> <img id="idProcessData" style="display:none;" src="img/loading.gif" /></td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">
+                          <table border="0" >
+                              <thead>
+                                <tr>
+                                  <td><b>文件路径</b></td>
+                                  <td width="200"></td> 
+          
+                                </tr>
+                              </thead>
+                              <tbody id="idFileListData">
+                              </tbody>
+                           </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" style="color:red">温馨提示：最多可同时上传 <b id="idLimitData"></b> 个文件，只允许上传 <b id="idExtData"></b> 文件。 </td>
+                    </tr>
+                   <tr>
+                     <td colspan="2" align="center" id="idMsgData" style='padding-bottom:0;'>
+                        <div class='boxSetButton'>
+                            <input type="button" value="开始上传"  id="idBtnuploadData" disabled="disabled" class="btn"/>
+                           &nbsp;&nbsp;&nbsp;
+                           <input type="button" value="全部取消"id="idBtndelData" disabled="disabled" class="btn"/>
+                       </div>
+                     </td>
+                   </tr>
+                  </tbody>
+                </table>
+              </form>
+        </div>
+        
+    </div>
+    <div class='layerThickness' id='showHomework'>
+        <div class='playTitle' id='homeworkTitle'> 
+           本章作业
+           <a href="javascript:hidden();"class='close'></a>
+        </div>
+        <div class='playCon'>
+         <form id="uploadHomework" action="file.jsp">
+              <table border="0" class="fu_list">
+                <thead>
+                  <tr>
+                    <td colspan="2"><b>上传文件</b></td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td align="right" width="15%" style="line-height:35px;">添加文件：</td>
+                    <td><a href="javascript:void(0);" class="files" id="idHomework"></a> <img id="idProcessHomework" style="display:none;" src="img/loading.gif" /></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                        <table border="0" >
+                            <thead>
+                              <tr>
+                                <td><b>文件路径</b></td>
+                                <td width="200"></td> 
+         
+                              </tr>
+                            </thead>
+                            <tbody id="idFileListHomework">
+                            </tbody>
+                         </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" style="color:red">温馨提示：最多可同时上传 <b id="idLimitHomework"></b> 个文件，只允许上传 <b id="idExtHomework"></b> 文件。 </td>
+                  </tr>
+                 <tr>
+                   <td colspan="2" align="center" id="idMsgHomework" style='padding-bottom:0;'>
+                        <div class='boxSetButton'>
+                            <input type="button" value="开始上传"  id="idBtnuploadHomework" disabled="disabled" class="btn"/>
+                             &nbsp;&nbsp;&nbsp;
+                             <input type="button" value="全部取消"id="idBtndelHomework" disabled="disabled" class="btn"/>
+                        </div>
+                   </td>
+                 </tr>
+                </tbody>
+              </table>
+            </form>
+        </div>
+    </div>
+    <div class='layerThickness' id='showTest'>
+        <div class='playTitle' id='testTitle'> 
+           本章测验
+           <a href="javascript:hidden();"class='close'></a>
+        </div>
+        <div class='playCon'>
+            测验》》》》即将跳转到考试系统
+        </div>
+        <div  class='boxSetButton'> 
+            <input name="" type="button" class="btn" value="确定"/>
+            <a href="javascript:hidden();"><input name="" type="button" class="btn"  value="取消"/></a>
+         </div>
+    </div>
+    <div class='layerThickness' id='showRelease'>
+        <div class='playTitle'  id='releaseTitle'> 
+           发布
+           <a href="javascript:hidden();"class='close'></a>
+        </div>
+        <div class='playCon'>
+           确定要发布吗？
+        </div>
+        <div  class='boxSetButton'> 
+            <input name="" type="button" class="btn" value="确定"/>
+            <a href="javascript:hidden();"><input name="" type="button" class="btn"  value="取消"/></a>
+        </div>
+    </div>
+   
+</div>
+
+<!-- onslectstart='return false'  防止鼠标选中 -->
+ <div class='mask' id='mask' onslectstart='return false'></div>
+ </div>
+	</div> 
+<script src="js/tt_javaScript.js"></script>
+<script type="text/javascript" src="js/t_Video.js"></script>
+<script type="text/javascript" src="js/t_Data.js"></script>
+<script type="text/javascript" src="js/t_Homework.js"></script>
+<script type="text/javascript">
+    prepareList();
+</script>
+<script src="js/move.js"></script>
+	
+</body>
+</html>

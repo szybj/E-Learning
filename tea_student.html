@@ -1,0 +1,320 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>学生管理</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/select.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
+<script type="text/javascript" src="js/select-ui.min.js"></script>
+<script type="text/javascript" src="editor/kindeditor.js"></script>
+<link rel="stylesheet" type="text/css" href="css/t_style.css"/>
+<script type="text/javascript"src="js/formValidator-4.0.1.js"></script>
+<script type="text/javascript" src="js/regist.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+  $("#rpwdb,#rpwdb2").click(function(){
+  $("#rpwd").fadeIn(200);
+  });
+  
+  $(".tiptop a").click(function(){
+  $("#rpwd").fadeOut(200);});
+
+  $("#s1").click(function(){
+  $("#rpwd").fadeOut(100);
+});
+  $("#update").click(function(){
+  $("#up").fadeIn(200);
+  });
+  
+  $(".tiptop a").click(function(){
+  $("#up").fadeOut(200);});
+
+  $("#s2").click(function(){
+  $("#up").fadeOut(100);
+});
+
+});
+</script>
+  
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $(".select1").uedSelect({
+		width : 345			  
+	});
+	$(".select2").uedSelect({
+		width : 167  
+	});
+	$(".select3").uedSelect({
+		width : 100
+	});
+});
+</script>
+</head>
+
+<body>
+	
+	
+		<div class="top">
+	
+		<div id='t_top'>
+		<div class='t_top'>
+			<div class='t_logo'></div>
+			<ul class='t_nav'>
+				<li><a href="tea_index.html" class="active">我的课程</a></li>
+				<li><a href="tea_admin_notice.html">管理员公告</a></li>
+			</ul>
+			<div class='t_user'>
+				<span><a href="">消息<i>10</i></a></span>
+				<div ><img src='images/img14.png' id='t_user'></div>
+			</div>
+		</div>	
+	</div>
+	
+		<div id='t_list'>
+			<div id='t_list_top'>
+				<img src='images/img14.png'>
+				<div class='t_list_top'>
+					<span>用户名lpoiiiiiiiiiii</span>
+					<p>讲师</p>
+				</div>
+			</div>
+			<ul>
+				<li><a href="tea_center.html">个人中心</a></li>
+		
+				<li><a href="">退出</a></li>
+			</ul>
+		</div>
+	
+
+<script src="js/t_javaScript.js"></script>
+<script type="text/javascript">
+	t_top();
+</script>
+
+	
+	
+	
+	</div>
+	<div class="left">
+		<ul id='t_leftul'>
+		<li id="dao"><a href="">导航</a></li>
+		<li><a href="">当前课程:&nbsp;&nbsp;&nbsp;计算机</a></li>
+		<li><a href="tea_notice.html">公告</a></li>
+		<li><a href="tea_prepareList.html">在线备课</a></li>
+		<li><a href="tea_classedit.html">编辑课程</a></li>
+		<li><a href="tea_data.html">课程资料</a></li>
+		<li><a href="tea_student.html">学生管理</a></li>
+		<li><a href="tea_learning_management.html">学习管理</a></li>
+		<li><a href="tea_courseEdit.html">课程管理</a></li>
+		<li><a href="tea_upload.html">上传资料</a></li>
+		<li><a href="tea_talk.html">讨论区</a></li>
+	</ul>
+	<script src="js/t_javaScript.js"></script>
+	<script type="text/javascript">
+		t_left();
+	</script>
+	</div>
+	
+	
+	<div class="mainbody">
+	
+	<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    <li><a href="#">首页</a></li>
+    <li><a href="#">学生管理</a></li>
+    </ul>
+    </div>
+    
+    <div class="formbody">
+    
+           
+    
+    
+            <ul class="seachform">
+            
+            <li><label>查询方式</label>  
+            <div class="vocation">
+            <select class="select3">
+            <option>班级</option>
+            <option>学号</option>
+            <option>姓名</option>
+            </select>
+            </div>
+            </li>
+            <li><label></label><input name="" type="text" class="scinput" /></li>
+           
+            <li><label>&nbsp;</label><input name="" type="button" class="scbtn" value="查询"/></li>
+            
+            </ul>
+    
+    
+    <table class="tablelist">
+    	<thead>
+    	<tr>
+        <th><input name="" type="checkbox" value="" checked="checked"/></th>
+        <th>学号</th>
+        <th>姓名</th>
+        <th>班级</th>
+        <th>性别</th>
+        <th>邮箱</th>
+        <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td><input name="" type="checkbox" value="" /></td>
+        <td>20130908</td>
+        <td>王金</td>
+        <td>100001</td>
+        <td>男</td>
+        <td>软件工程</td>
+        
+        <td><a href="#" class="tablelink" id="update">修改</a>&nbsp;&nbsp;&nbsp;
+        <a href="#" class="tablelink" onclick="return confirm('确定删除？')"> 删除</a>&nbsp;&nbsp;&nbsp;
+        <a href="#" id="rpwdb" class="tablelink">重置密码</a></td>
+        </tr> 
+        
+        <tr>
+        <td><input name="" type="checkbox" value="" /></td>
+        <td>20130907</td>
+        <td>温州停</td>
+        <td>100001</td>
+        <td>女</td>
+        <td>软件工程</td>
+        
+        <td><a href="#" class="tablelink" id="update">修改</a>&nbsp;&nbsp;&nbsp;
+        <a href="#" class="tablelink" onclick="return confirm('确定删除？')"> 删除</a>&nbsp;&nbsp;&nbsp;
+        <a href="#" id="rpwdb" class="tablelink">重置密码</a></td>
+        </tr>
+        
+        <tr>
+        <td><input name="" type="checkbox" value="" /></td>
+        <td>20130906</td>
+        <td>社科型</td>
+        <td>100001</td>
+        <td>男</td>
+        <td>软件工程</td>
+        
+        <td><a href="#" class="tablelink" id="update">修改</a>&nbsp;&nbsp;&nbsp;
+        <a href="#" class="tablelink" onclick="return confirm('确定删除？')"> 删除</a>&nbsp;&nbsp;&nbsp;
+        <a href="#" id="rpwdb" class="tablelink">重置密码</a></td>
+        </tr>
+        
+        <tr>
+        <td><input name="" type="checkbox" value="" /></td>
+        <td>20130905</td>
+        <td>江西讨</td>
+        <td>100001</td>
+        <td>男</td>
+        <td>软件工程</td>
+        
+        <td><a href="#" class="tablelink" id="update">修改</a>&nbsp;&nbsp;&nbsp;
+        <a href="#" class="tablelink" onclick="return confirm('确定删除？')"> 删除</a>&nbsp;&nbsp;&nbsp;
+        <a href="#" id="rpwdb" class="tablelink">重置密码</a></td>
+        </tr>
+        
+        <tr>
+        <td><input name="" type="checkbox" value="" /></td>
+        <td>20130907</td>
+        <td>温业关</td>
+        <td>100001</td>
+        <td>女</td>
+        <td>软件工程</td>
+        
+        <td><a href="#" class="tablelink" id="update">修改</a>&nbsp;&nbsp;&nbsp;
+        <a href="#" class="tablelink" onclick="return confirm('确定删除？')"> 删除</a>&nbsp;&nbsp;&nbsp;
+        <a href="#" id="rpwdb" class="tablelink">重置密码</a></td>
+        </tr>
+    
+        </tbody>
+    </table>
+        <br /><br />
+        &nbsp;&nbsp;
+        <label>&nbsp;</label><a href="tea_addStudent.html"><input name="" type="button" class="scbtn" value="增加学生"/></a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label>&nbsp;</label><a href="#"><input type="button" class="scbtn" id="rpwdb2" value="批量重置密码" style="width: 100px;"/></a>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label>&nbsp;</label><input name="" type="button" class="scbtn" value="批量删除学生" style="width: 100px;" onclick="return confirm('确定删除？')"/>
+   
+  
+    
+    </div>  
+       
+	</div> 
+ 
+
+        <div class="tipc" id="rpwd">
+                <div class="tiptop"><span>重置密码</span><a id="ba"></a></div>
+        
+              <ul class="forminfoc">
+
+                  <li><label>&nbsp;</label>
+                <li><label>重置密码：</label>
+                <input name="" type="text" class="cinput" /> <span style="float:left;margin-left:220px;margin-top:-25px;color:#f00">原密码错误</span></li>
+                <li><label>&nbsp;</label>
+                 <li><label>&nbsp;</label>
+                  <li><label>&nbsp;</label>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input name="" type="button" class="btn" id="s1" value="确认修改"/></li>
+            </ul>
+        
+        </div>
+    
+         </div>
+
+          <div class="tipc" id="up">
+            <div class="tiptop"><span>修改学生信息</span><a id="ba"></a></div>
+        
+              <ul class="forminfoc">
+                 <li>   <span style="margin-top:20px;float:left;">院系：</span> 
+                    <div class="vocation" style="margin-top:10px;">
+                    <select class="select3" >
+                    <option>100001</option>
+                    <option>100002</option>
+                    <option>100003</option>
+                    <option>100004</option>
+                    </select>
+                    </div>
+
+                     <span style="margin-left:20px;margin-top:20px;float:left;">班级：</span> 
+                    <div class="vocation" style="margin-top:10px;">
+                    <select class="select3" >
+                    <option>100001</option>
+                    <option>100002</option>
+                    <option>100003</option>
+                    <option>100004</option>
+                    </select>
+                    </div>
+                </li>
+                <li><label>姓名：</label>
+                    <input name="" style="width:200px;float:left;margin-top:-30px;margin-left:40px;" type="text" class="dfinput" value="" 
+                    onblur="return valinickname()" id="txtNickName"/>
+                    <span style="margin-left: 20px;float: left;margin-top: -20px;color: red;"id="nickname_info"></span>
+                </li>
+                <li><label>学号：</label>
+                    <input name="" style="width:200px;float:left;margin-top:-30px;margin-left:40px;" type="text" class="dfinput" value=""
+                     onblur="return valinickid()" id="txtNickId" />
+                     <span style="margin-left: 20px;float: left;margin-top: -20px;color: red;"id="nickid_info"></span>
+                </li>
+
+                <li><label>性别：</label>
+                <input name="" type="radio"style="margin-top:10px;margin-left:-140px;" value="" checked="checked" />男&nbsp;&nbsp;&nbsp;&nbsp;<input name="" type="radio" value="" />女</li>
+                
+                <li><label>邮箱：</label>
+                    <input name="" style="width:200px;float:left;margin-top:-30px;margin-left:40px;" type="text" class="dfinput" value="" 
+                    onblur="return valiemail();" id="txtEmail"/>
+                    <span style="margin-left: 20px;float: left;margin-top: -20px;color: red;"id="email_info"></span>
+                </li>
+                <li><label>&nbsp;</label>
+                <input style="margin-left:80px;" type="button" class="btn" id="s2" value="确认保存"/></li>
+                </ul>
+        
+        </div>
+    
+</body>
+
+</html>

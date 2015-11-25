@@ -1,0 +1,445 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>学习管理</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/select.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
+<script type="text/javascript" src="js/select-ui.min.js"></script>
+<script type="text/javascript" src="editor/kindeditor.js"></script>
+<link rel="stylesheet" type="text/css" href="css/t_style.css"/>
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $(".select1").uedSelect({
+		width : 345			  
+	});
+	$(".select2").uedSelect({
+		width : 167  
+	});
+	$(".select3").uedSelect({
+		width : 100
+	});
+});
+</script>
+
+<script type="text/javascript">  
+//===========================点击展开关闭效果====================================  
+function openShutManager(oSourceObj,oTargetObj,shutAble,oOpenTip,oShutTip){  
+var sourceObj = typeof oSourceObj == "string" ? document.getElementById(oSourceObj) : oSourceObj;  
+var targetObj = typeof oTargetObj == "string" ? document.getElementById(oTargetObj) : oTargetObj;  
+var openTip = oOpenTip || "";  
+var shutTip = oShutTip || "";  
+if(targetObj.style.display!="none"){  
+   if(shutAble) return;  
+   targetObj.style.display="none";  
+   if(openTip  &&  shutTip){  
+    sourceObj.innerHTML = shutTip;   
+   }  
+} else {  
+   targetObj.style.display="block";  
+   if(openTip  &&  shutTip){  
+    sourceObj.innerHTML = openTip;   
+   }  
+}  
+}  
+</script>  
+
+</head>
+
+<body>
+	
+	
+		<div class="top">
+	
+		<div id='t_top'>
+		<div class='t_top'>
+			<div class='t_logo'></div>
+			<ul class='t_nav'>
+				<li><a href="tea_index.html" class="active">我的课程</a></li>
+				<li><a href="tea_admin_notice.html">管理员公告</a></li>
+			</ul>
+			<div class='t_user'>
+				<span><a href="">消息<i>10</i></a></span>
+				<div ><img src='images/img14.png' id='t_user'></div>
+			</div>
+		</div>	
+	</div>
+	
+		<div id='t_list'>
+			<div id='t_list_top'>
+				<img src='images/img14.png'>
+				<div class='t_list_top'>
+					<span>用户名lpoiiiiiiiiiii</span>
+					<p>讲师</p>
+				</div>
+			</div>
+			<ul>
+				<li><a href="tea_center.html">个人中心</a></li>
+			
+				<li><a href="">退出</a></li>
+			</ul>
+		</div>
+	
+
+<script src="js/t_javaScript.js"></script>
+<script type="text/javascript">
+	t_top();
+</script>
+
+	
+	
+	
+	</div>
+	<div class="left">
+		<ul id='t_leftul'>
+		<li id="dao"><a href="">导航</a></li>
+		<li><a href="">当前课程:&nbsp;&nbsp;&nbsp;计算机</a></li>
+		<li><a href="tea_notice.html">公告</a></li>
+		<li><a href="tea_prepareList.html">在线备课</a></li>
+		<li><a href="tea_classedit.html">编辑课程</a></li>
+		<li><a href="tea_data.html">课程资料</a></li>
+		<li><a href="tea_student.html">学生管理</a></li>
+		<li><a href="tea_learning_management.html">学习管理</a></li>
+		<li><a href="tea_courseEdit.html">课程管理</a></li>
+		<li><a href="tea_upload.html">上传资料</a></li>
+		<li><a href="tea_talk.html">讨论区</a></li>
+	</ul>
+	<script src="js/t_javaScript.js"></script>
+	<script type="text/javascript">
+		t_left();
+	</script>
+	</div>
+	
+	<div class="mainbody">
+	
+	<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    <li><a href="#">我的课程</a></li>
+    <li><a href="#">学习管理</a></li>
+    </ul>
+    </div>
+    
+    <div class="formbody">
+		     
+        <div id="usual1" class="usual"> 
+        	<div class="it1">
+   			<div class="itab">
+          	<ul> 
+            <li><a href="#tab1" class="selected">学生作业</a></li> 
+            <li><a href="#tab2">学习进度</a></li> 
+            <li><a href="#tab3">测验</a></li> 
+          	</ul>
+            </div>
+          </div>   
+
+            
+           
+            
+            <ul class="seachform">
+
+                 <li><label>小节</label>  
+                    <div class="vocation">
+                    <select class="select3">
+                    <option>第一大节</option>
+                    <option>第二大节</option>
+                    </select>
+                    </div>
+                </li>
+            </ul>    
+           
+           <div class="tipbtn">
+        <input name="" type="button"  class="sure" value="确定" />
+        </div>
+          	<div id="tab1" class="tabson">
+                <table class="tablelist">
+                    <thead>
+                    <tr>
+                
+                    <th>学号</th>
+                    <th>姓名</th>
+                    <th>作业主题</th>
+                    <th>课程名称</th>
+                    <th>作业情况</th>
+                    <th>提交时间</th>
+                    <th>评分</th>
+                    <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                    
+                    <td>12345678</td>
+                    <td>张三</td>
+                    <td>课程一作业</td>
+                    <td>课程一</td>
+                    <td>已提交</td>
+                    <td>2013-09-09</td>
+                    <td>8</td>
+                    <td><a href="tea_homework_details.html" class="tablelink">查看</a>&nbsp;&nbsp;||&nbsp;&nbsp; <a href="#" class="tablelink"> 删除</a></td>
+                    </tr> 
+                    
+                    <tr>
+                  
+                    <td>12345678</td>
+                    <td>张三</td>
+                    <td>课程一作业</td>
+                    <td>课程一</td>
+                    <td>已提交</td>
+                    <td>2013-09-09</td>
+                    <td>8</td>
+                    <td><a href="tea_homework_details.html" class="tablelink">查看</a>&nbsp;&nbsp;||&nbsp;&nbsp;<a href="#" class="tablelink"> 删除</a></td>
+                    </tr> 
+                    
+                    <tr>
+                   
+                    <td>12345678</td>
+                    <td>张三</td>
+                    <td>课程一作业</td>
+                    <td>课程一</td>
+                    <td>已提交</td>
+                    <td>2013-09-09</td>
+                    <td>8</td>
+                    <td><a href="tea_homework_details.html" class="tablelink">查看</a>&nbsp;&nbsp;||&nbsp;&nbsp; <a href="#" class="tablelink"> 删除</a></td>
+                    </tr> 
+                    
+                    <tr>
+                    
+                    <td>12345678</td>
+                    <td>张三</td>
+                    <td>课程一作业</td>
+                    <td>课程一</td>
+                    <td>已提交</td>
+                    <td>2013-09-09</td>
+                    <td>8</td>
+                    <td><a href="#" class="tablelink">查看</a>&nbsp;&nbsp;||&nbsp;&nbsp; <a href="#" class="tablelink"> 删除</a></td>
+                    </tr> 
+       
+                 </tbody>
+                </table>
+    
+   
+                <div class="pagin">
+                    <div class="message">共<i class="blue">1256</i>条记录，当前显示第&nbsp;<i class="blue">2&nbsp;</i>页</div>
+                    <ul class="paginList">
+                    <li class="paginItem"><a href="javascript:;"><span class="pagepre"></span></a></li>
+                    <li class="paginItem"><a href="javascript:;">1</a></li>
+                    <li class="paginItem current"><a href="javascript:;">2</a></li>
+                    <li class="paginItem"><a href="javascript:;">3</a></li>
+                    <li class="paginItem"><a href="javascript:;">4</a></li>
+                    <li class="paginItem"><a href="javascript:;">5</a></li>
+                    <li class="paginItem more"><a href="javascript:;">...</a></li>
+                    <li class="paginItem"><a href="javascript:;">10</a></li>
+                    <li class="paginItem"><a href="javascript:;"><span class="pagenxt"></span></a></li>
+                    </ul>
+                </div>
+    
+
+            </div> 
+        
+        
+          	<div id="tab2" class="tabson">
+                <table class="tablelistlc" >
+                    <thead>
+                    <tr >
+                    <th>学号</th>
+                    <th>姓名</th>
+                    <th>课程名称</th>
+                    <th>学习时长</th>
+                    <th>学习进度</th>
+                    <th>操作</th>
+                    </tr>
+                    </thead>
+<!--               </table> -->
+<!--               <table class="tablelistlc">    -->
+                    <tbody>
+                    <tr>
+                  
+                        <td>12345678</td>
+                        <td>张三</td>
+                        <td>计算机网络</td>
+                       	<td>30min</td>
+                       <td style="width:450px;">
+                           <div style="width:300px;height:10px;border:1px solid ;float:left;margin-left:30px;margin-top:9px;position:relative;"></div>
+                           <span style="float:left;margin-top:-3px;">80%</span>     
+                       </td>
+                        <td><a onclick="openShutManager(this,'box1',false,'收起','展开')" href="#">展开</a></td>
+                        
+                    </tr> 
+                    </tbody>
+                </table>
+<!--					<tr>-->
+                        <div id="box1" style="display:none">
+                            <table class="tablelistlc" style=" width:56% ;margin-left:36%;">
+                                <tbody>
+                                <tr>
+                          
+                                    <td>第一节</td>
+                               
+                                     <td style="width:450px;">
+                                       <div style="width:300px;height:10px;border:1px solid ;float:left;margin-left:30px;margin-top:9px;position:relative;"></div>
+                                        <span style="float:left;margin-top:-3px;">80%</span>      
+                                   </td>
+                                </tr> 
+                                
+                                <tr>
+                               
+                                  
+                                    <td>第一节</td>
+                                    
+                                    <td style="width:450px;">
+                                         <div style="width:300px;height:10px;border:1px solid ;float:left;margin-left:30px;margin-top:9px;position:relative;"></div>
+                                        <span style="float:left;margin-top:-3px;">80%</span>   
+                                     </td>
+                                </tr> 
+                                
+                                <tr>
+                               
+                                  
+                                    <td>第一节</td>
+                                    
+                                    <td style="width:450px;">
+                                         <div style="width:300px;height:10px;border:1px solid ;float:left;margin-left:30px;margin-top:9px;position:relative;"></div>
+                                        <span style="float:left;margin-top:-3px;">80%</span>  
+                                    </td>
+                                </tr> 
+                            </tbody>
+                            </table>
+<!--                            <span>&nbsp;</span>-->
+                        </div>
+<!--                   </tr>-->
+                 <table class="tablelistlc">
+                    <tbody>
+                  	<tr>
+                        <td>12345678</td>
+                        <td>张三</td>
+                        <td>计算机网络</td>
+                       	<td>30min</td>
+                       <td style="width:450px;">
+                             <div style="width:300px;height:10px;border:1px solid ;float:left;margin-left:30px;margin-top:9px;position:relative;"></div>
+                           <span style="float:left;margin-top:-3px;">80%</span>
+                        </td>
+                        <td><a onclick="openShutManager(this,'box1',false,'收起','展开')" href="#">展开</a></td>
+                        
+                    </tr> 
+                    </tbody>
+                </table>
+
+
+
+
+<!--                   <tr>
+                   
+                    <td>12345678</td>
+                    <td>张三</td>
+                    <td>计算机网络</td>
+                    
+                    <td style="width:450px;"><div style="width:300px;height:10px;border:1px solid ;float:left;margin-left:30px;position:relative;"></div><span style="float:left;margin-top:-10px;">80%</span>     </td>
+                    <td>展开</td>
+                    
+                    </tr> 
+                    
+                    <tr>
+                   
+                    <td>12345678</td>
+                    <td>张三</td>
+                    <td>计算机网络</td>
+                    
+                    <td style="width:450px;"><div style="width:300px;height:10px;border:1px solid ;float:left;margin-left:30px;position:relative;"></div><span style="float:left;margin-top:-10px;">80%</span>     </td>
+                    <td>展开</td>
+                    
+                    </tr> 
+  
+                 </tbody>   
+                </table>-->
+    
+                <div class="pagin">
+                    <div class="message">共<i class="blue">1256</i>条记录，当前显示第&nbsp;<i class="blue">2&nbsp;</i>页</div>
+                    <ul class="paginList">
+                    <li class="paginItem"><a href="javascript:;"><span class="pagepre"></span></a></li>
+                    <li class="paginItem"><a href="javascript:;">1</a></li>
+                    <li class="paginItem current"><a href="javascript:;">2</a></li>
+                    <li class="paginItem"><a href="javascript:;">3</a></li>
+                    <li class="paginItem"><a href="javascript:;">4</a></li>
+                    <li class="paginItem"><a href="javascript:;">5</a></li>
+                    <li class="paginItem more"><a href="javascript:;">...</a></li>
+                    <li class="paginItem"><a href="javascript:;">10</a></li>
+                    <li class="paginItem"><a href="javascript:;"><span class="pagenxt"></span></a></li>
+                    </ul>
+                </div>
+    
+
+          
+            
+            </div>  
+
+                <div id="tab3" class="tabson">
+                     <table class="tablelist">
+                    <thead>
+                    <tr>
+                    <th>学号<i class="sort"><img src="images/px.gif" /></i></th>
+                    <th>姓名</th>
+                    <th>测试主题</th>
+                    <th>测试时间</th>
+                    <th>成绩</th>
+                    <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                   
+                    <td>20130908</td>
+                    <td>王金平</td>
+                    <td>测试一</td>
+                    <td>2013-09-09 15:05</td>
+                    <td>80</td>
+                    <td><a href="#" class="tablelink">查看</a>     <a href="#" class="tablelink"> 删除</a></td>
+                    </tr> 
+                    
+                    <tr>
+                    <td>20130908</td>
+                    <td>王金平</td>
+                    <td>测试一</td>
+                    <td>2013-09-09 15:05</td>
+                    <td>80</td>
+                    <td><a href="#" class="tablelink">查看</a>     <a href="#" class="tablelink"> 删除</a></td>
+                    </tr> 
+      
+                 </tbody>
+                </table>
+    
+                <div class="pagin">
+                    <div class="message">共<i class="blue">1256</i>条记录，当前显示第&nbsp;<i class="blue">2&nbsp;</i>页</div>
+                    <ul class="paginList">
+                    <li class="paginItem"><a href="javascript:;"><span class="pagepre"></span></a></li>
+                    <li class="paginItem"><a href="javascript:;">1</a></li>
+                    <li class="paginItem current"><a href="javascript:;">2</a></li>
+                    <li class="paginItem"><a href="javascript:;">3</a></li>
+                    <li class="paginItem"><a href="javascript:;">4</a></li>
+                    <li class="paginItem"><a href="javascript:;">5</a></li>
+                    <li class="paginItem more"><a href="javascript:;">...</a></li>
+                    <li class="paginItem"><a href="javascript:;">10</a></li>
+                    <li class="paginItem"><a href="javascript:;"><span class="pagenxt"></span></a></li>
+                    </ul>
+                </div>
+    
+
+          
+            
+            </div>  
+           
+    	</div> 
+ 
+	<script type="text/javascript"> 
+      $("#usual1 ul").idTabs(); 
+    </script>
+    
+  
+    </div>
+
+</div>
+</body>
+
+</html>

@@ -1,0 +1,201 @@
+body,h1,h2,h3,h4,h5,h6,p,dl,dd,ul,ol,pre,form,input,textarea,th,td,select,img{ margin:0; padding:0; border: none;}
+em{ font-style:normal}
+li{ list-style:none}
+a { color: #333; text-decoration: none;}
+a:hover { text-decoration: underline;}
+img{ border:none; vertical-align:top}
+
+
+.tclearFix:after { 
+	content:"."; 
+	display:block; 
+	height:0; 
+	clear:both; 
+	visibility:hidden
+}
+.tclearFix{ *height:1%;}
+#tlist1{ 
+	margin-left:200px; 
+	text-align:left; 
+	width: 540px;
+	
+}
+
+#tlist2{ 
+	margin-left:200px; 
+	text-align:left; 
+	width: 540px;
+	
+}
+
+#tlist3{ 
+	margin-left:200px; 
+	text-align:left; 
+	width: 540px;
+	
+}
+
+.tbox { 
+	border-top: 1px solid #eee; 
+	position: relative;  
+	width: 540px; 
+	padding: 20px 0;
+}
+.tbox:hover .tclose { 
+	display: block;
+}
+.tclose { 
+	display: none; 
+	top:0px; 
+	right: 0px; 
+	width: 28px; 
+	height: 28px;  
+	position: absolute; 
+	background: #f2f4f7; 
+	line-height: 28px; 
+	text-align: center;
+}
+.tclose:hover { 
+	background: #c8d2e2; 
+	text-decoration: none;
+}
+.thead { 
+	float: left; 
+	width: 60px; 
+	height: 60px; 
+	margin-right: 10px; 
+	border-radius: 50%;
+}
+.tcontent { 
+	float:left; 
+	width: 440px;
+}
+.tmain { 
+	margin-bottom: 10px;
+}
+.ttxt { 
+	margin-bottom: 10px;
+}
+.tuser { 
+	color: #369;
+	font-weight:bold;  
+	padding-right:10px;
+}
+.tpic { 
+	margin-right: 10px; 
+	width: 200px; s
+}
+.tinfo { 
+	height: 20px; 
+	line-height: 20px; 
+	font-size: 14px; 
+	margin-bottom:10px;
+}
+.tinfo .ttime { 
+	color: #ccc; 
+	float: left; 
+	height: 20px; 
+	padding-left:28px; 
+	background: url("../images/bg1.jpg") no-repeat left top;
+}
+.tinfo .tpraise { 
+	color: #369; 
+	float: right; 
+	height: 20px; 
+	padding-left: 18px; 
+	background: url("../images/bg2.jpg") no-repeat left top;
+}
+.tinfo .tpraise:hover { 
+	text-decoration: underline; 
+	background: url("../images/bg3.jpg") no-repeat left top;
+}
+.tpraisesTotal { 
+	margin-bottom: 10px; 
+	height: 20px; 
+	background: url("../images/praise.png") no-repeat 5px 6px #DEFEFC; 
+	padding: 5px 0 5px 25px; 
+	line-height: 20px;
+}
+.tcommentBox { 
+	padding: 10px 0; 
+	border-top: 1px solid #eee;
+}
+.tcommentBox:hover { 
+	background: rgb(247, 247, 247);
+}
+.tcommentBox .tmyHead { 
+	float: left; 
+	width: 30px; 
+	height: 30px; 
+	margin-right: 10px;
+}
+.tcommentBox .tcommentContent { 
+	float: left; width: 400px; 
+}
+.tcommentBox .tcommentContent .tcommentTime { 
+	color: #ccc;
+	margin-top: 5px; 
+	line-height: 16px; 
+	position: relative;
+}
+.tcommentBox .tcommentContent .tcommentPraise { 
+	display: none; 
+	color: #369; 
+	padding-left: 17px; 
+	height: 20px; 
+	background: url("../images/praise.png") no-repeat;  
+	position: absolute; 
+	bottom: 0px; 
+	right: 44px;
+}
+.tcommentBox .tcommentContent .tcommentOperate { 
+	display: none; 
+	color: #369; 
+	height: 20px;  
+	position: absolute; 
+	bottom: 0px; 
+	right: 10px;
+}
+.tcommentBox .tcommentContent:hover .tcommentPraise { display: inline-block;}
+.tcommentBox .tcommentContent:hover .tcommentOperate { display: inline-block;}
+.ttextBox .tcomment { 
+	border: 1px solid #eee; 
+	display: block; 
+	height: 15px; 
+	width: 428px; 
+	padding: 5px; 
+	resize: none; 
+	color: #ccc
+}
+.ttextBox .tbtn { 
+	font-size: 12px; 
+	font-weight: bold; 
+	display: none; 
+	float: right; 
+	width: 65px; 
+	height: 25px; 
+	border: 1px solid #0C528D; 
+	color: #fff; 
+	background: #4679AC;
+}
+.ttextBox .tbtnOff { 
+	border: 1px solid #ccc;
+	 color: #ccc; 
+	 background: #F7F7F7;
+}
+.ttextBox .tword{ 
+	display: none; 
+	float: right; 
+	margin: 7px 10px 0 0; 
+	color: #666;
+}
+.ttextBoxOn .tcomment{ 
+	height: 50px; 
+	color: #333;
+}
+.ttextBoxOn .tbtn{ 
+	display: inline;
+}
+.ttextBoxOn .tword{ 
+	display: inline;
+}
