@@ -1,6 +1,24 @@
+function t_top(){
+	var oTuser = document.getElementById('t_user');
+	var oTlist = document.getElementById('t_list');
+	var timer = null
 
+  	oTuser.onmouseover = oTlist.onmouseover  = function(){
 
-function t_left(){
+		oTlist.style.display = 'block';
+		/*startMove( oTlist, 'alpha', '100',function(){
+			alert(1);
+		});*/
+		clearInterval( timer );
+	}
+
+	oTuser.onmouseout = oTlist.onmouseout = function(){
+		timer = setInterval( function(){
+			oTlist.style.display = 'none';
+		},500)
+	}
+
+	function t_left(){
 	var oLeftUl = document.getElementById('t_leftul');
 	var aLeftLi = oLeftUl.getElementsByTagName('li');
 
@@ -26,27 +44,7 @@ function t_left(){
 }
 
 
-function t_top(){
-	var oTuser = document.getElementById('t_user');
-	var oTlist = document.getElementById('t_list');
-	var timer = null
 
-  	oTuser.onmouseover = oTlist.onmouseover  = function(){
-
-		oTlist.style.display = 'block';
-		/*startMove( oTlist, 'alpha', '100',function(){
-			alert(1);
-		});*/
-		clearInterval( timer );
-	}
-
-	oTuser.onmouseout = oTlist.onmouseout = function(){
-		timer = setInterval( function(){
-			oTlist.style.display = 'none';
-		},500)
-	}
-
-	
 
 	//鼠标滑过改变颜色
 	var oUl = document.getElementById('t_list').getElementsByTagName('ul')[0];

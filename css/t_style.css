@@ -13,9 +13,9 @@ textarea{ resize:none; overflow:auto}
 #t_top{background: #000; position: fixed;top:0; left: 0; width: 100%;}
 .t_logo{ background:url(../images/logo.png) no-repeat center center; width: 271px; height: 88px; float: left; margin-right: 50px;}
 .t_nav{ height: 88px; line-height: 88px;}
-.t_nav li{ padding:0 60px; position:relative;display: inline-block;}
-.t_nav  a{ display:block;line-height:88px; font-size:16px; color:#fdfbf9; text-align:center; background:url(../images/nav_hover.png) no-repeat center 90px}
-.t_nav a:hover,.t_nav .active{ background-position: center 65px;}
+.t_nav li{ padding:0 60px; position:relative;display: inline-block;background:url(../images/nav_hover.png) no-repeat center 90px;z-index: 99999;}
+.t_nav  a{ display:block;line-height:88px; font-size:16px; color:#fdfbf9; text-align:center; }
+.t_nav li:hover,.t_nav .active{ background-position: center 65px;}
 .t_user{ width: 180px; height:40px; background: #Fff; position: absolute;top:50%;right:46px; margin-top: -20px;margin-right:150px; border-radius: 30px;
 filter:progid:DXImageTransform.Microsoft.Shadow(color=#909090,direction=120,strength=3);/*ie*/
 -moz-box-shadow: 5px 5px 10px 2px #909090;/*firefox*/

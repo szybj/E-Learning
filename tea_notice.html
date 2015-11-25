@@ -11,34 +11,21 @@
 <script type="text/javascript" src="editor/kindeditor.js"></script>
 <link rel="stylesheet" type="text/css" href="css/t_style.css"/>
 <script type="text/javascript">
-$(document).ready(function(){
+    $(document).ready(function(){
 
-  $("#rpwdb").click(function(){
-  $("#rpwd").fadeIn(200);
-  });
-  
-  $(".tiptop a").click(function(){
-  $("#rpwd").fadeOut(200);});
+      $("#rpwdb").click(function(){
+      $("#rpwd").fadeIn(200);
+      });
+      
+      $(".tiptop a").click(function(){
+      $("#rpwd").fadeOut(200);});
 
-  $("#s1").click(function(){
-  $("#rpwd").fadeOut(100);
+      $("#s1").click(function(){
+      $("#rpwd").fadeOut(100);
+    });
+
 });
 
-});
-</script>
-  
-<script type="text/javascript">
-$(document).ready(function(e) {
-    $(".select1").uedSelect({
-		width : 345			  
-	});
-	$(".select2").uedSelect({
-		width : 167  
-	});
-	$(".select3").uedSelect({
-		width : 100
-	});
-});
 </script>
 </head>
 
@@ -51,8 +38,8 @@ $(document).ready(function(e) {
 		<div class='t_top'>
 			<div class='t_logo'></div>
 			<ul class='t_nav'>
-				<li><a href="index.html" class="active">我的课程</a></li>
-				<li><a href="tea_admin_notice.html">管理员公告</a></li>
+				<li class="active" ><a href="index.html" >我的课程</a></li>
+                <li ><a href="tea_admin_notice.html" >管理员公告</a></li>
 			</ul>
 			<div class='t_user'>
 				<span><a href="">消息<i>10</i></a></span>
@@ -77,13 +64,7 @@ $(document).ready(function(e) {
 	
 
 <script src="js/t_javaScript.js"></script>
-<script type="text/javascript">
-	t_top();
-</script>
 
-	
-	
-	
 	</div>
 	<div class="left">
 		<ul id='t_leftul'>
@@ -99,10 +80,7 @@ $(document).ready(function(e) {
 		<li><a href="tea_upload.html">上传资料</a></li>
 		<li><a href="tea_talk.html">讨论区</a></li>
 	</ul>
-	<script src="js/t_javaScript.js"></script>
-	<script type="text/javascript">
-		t_left();
-	</script>
+	
 	</div>	
 		
 	<div class="mainbody">	
@@ -198,7 +176,12 @@ $(document).ready(function(e) {
    
 </div>
 </div>
-
+<script src="js/t_javaScript.js"></script>
+    <script type="text/javascript">
+     t_top();
+        t_left();
+    </script>
+  
 </body>
 
 </html>
