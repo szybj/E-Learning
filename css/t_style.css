@@ -29,10 +29,12 @@ box-shadow:5px 5px 10px 2px #909090;/*opera或ie9*/}
 #t_user:hover{ border-color:red;}
 
 #t_list{ width:200px; position:relative;right:180px;top:93px; float: right; display:none;background-: #f5f8fa;z-index: 1000;
+
 filter:progid:DXImageTransform.Microsoft.Shadow(color=#909090,direction=120,strength=3);/*ie*/
 -moz-box-shadow: 5px 5px 10px 2px #909090;/*firefox*/
 -webkit-box-shadow: 5px 5px 10px 2px #909090;/*safari或chrome*/
-box-shadow:2px 2px 10px 2px  #909090;/*opera或ie9*/ z-index: 9999;}
+box-shadow:2px 2px 10px 2px  #909090;/*opera或ie9*/ z-index: 9999;
+}
 #t_list:after,#t_list:before{ border: solid transparent;content:'';height:0;bottom:100%;position: absolute;width: 0;}
 #t_list:before{border-width: 16px;border-bottom-color: #F01400;left:130px;}
 /* #t_list:after{border-width: 18px;border-bottom-color: #fff;left:182px;} */
@@ -49,9 +51,53 @@ box-shadow:2px 2px 10px 2px  #909090;/*opera或ie9*/ z-index: 9999;}
 /****************************t_left*******************************/
 
 #dao{background-color: #edf6fa;}
-#t_leftul{ background-: #f5f8fa; width: 187px; text-indent: 20px;}
+#t_leftul{ background: url(../images/left_bg.png) repeat-y right; width: 202px; text-indent: 20px;}
 #t_leftul li{width: 200px; height: 40px; line-height: 40px;}
 #t_leftul li a{display: block; width: 200px; height: 40px; line-height: 40px; color:#000;text-indent: 30px;font-size: 18px;}
+
+
+/*****************************index.html*****************************/
+.t_course_conrt .button{
+	display:block;
+	float: right;
+	width: 140px;
+    height: 50px;
+    outline: none;
+    line-height: 50px;
+    color: #2fb36a;
+    font-family: Arial;
+    font-size: 18px; 
+    font-weight: bold;
+    border:2px solid rgba(47,179,106,0.3); 
+    padding-left:20px;
+    margin-right:50px;
+    box-sizing:border-box;
+    -ms-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	background: url(../images/allow.png) no-repeat 80px center;
+	transition:0.5s ease;
+	-moz-transition:0.5s ease;
+	-webkit-transition:0.5s ease;
+	-o-transition:0.5s ease;
+
+	
+}
+
+.t_course_conrt .button:hover{border: 2px solid rgba(47,179,106,0.8);background-position: 100px center;
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=#909090,direction=120,strength=3);/* ie */
+	-moz-box-shadow: 5px 5px 10px 2px #909090;/* firefox */
+	-webkit-box-shadow: 5px 5px 10px 2px #909090;/* safari或chrome */
+	box-shadow:10px 10px 50px 25px white inset;/* opera或ie9  */
+}
+.t_course_conrt .button .line{ position: absolute; display: block; background: none;
+	transition:0.4s ease;
+	-moz-transition:0.4s ease;
+	-webkit-transition:0.4s ease;
+	-o-transition:0.4s ease;
+
+}
 
 /************************t_onlineLessons**************************/
 
@@ -68,9 +114,9 @@ box-shadow:2px 2px 10px 2px  #909090;/*opera或ie9*/ z-index: 9999;}
 .t_course_con{ width: 832px; height: 145px; padding: 20px;}
 .t_course_coni,.t_course_coni img{width: 200px; height: 145px;float: left;overflow: hidden;}
 .t_course_conr{ width:602px;height: 145px;float: left; padding-left: 30px;}
-.t_course_conrt{ margin-top: 10px;}
+.t_course_conrt{ margin-top: 10px; height: 50px;}
 .t_course_conr h3,.t_course_conr b,.t_course_conr i,.t_course_conr span{font-style: normal;font-weight: normal;padding: 0 10px;}
-.t_course_conrt h3{ padding: 10px 0 0 0; height: 28px; line-height: 28px}
+.t_course_conrt h3{ padding: 10px 0 0 0; height: 28px; line-height: 28px; display: inline-block;}
 .t_course_conrb{ margin-top: 50px; height: 38px;line-height: 38px;}
 .t_course_conrbr{ float: right; margin-right: 30px;}
 .t_course_conrb .l{ background:url(../images/line.png) no-repeat right; }
@@ -79,7 +125,12 @@ box-shadow:2px 2px 10px 2px  #909090;/*opera或ie9*/ z-index: 9999;}
 .across_border{filter:progid:DXImageTransform.Microsoft.Shadow(color=#909090,direction=120,strength=3);/*ie*/
 -moz-box-shadow: 5px 5px 10px 2px #909090;/*firefox*/
 -webkit-box-shadow: 5px 5px 10px 2px #909090;/*safari或chrome*/
-box-shadow:2px 2px 10px 2px  #909090;/*opera或ie9*/}
+box-shadow:2px 2px 10px 2px  #909090;/*opera或ie9*/
+	transition:0.2s ease;
+	-moz-transition:0.2s ease;
+	-webkit-transition:0.2s ease;
+	-o-transition:0.2s ease;
+}
 
 /********************************************prepareList*********************************/
 .prepareListBox{  padding-top: 60px; width: 874px;margin-left: 20px; font-size: 0; }

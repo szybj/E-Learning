@@ -1,3 +1,6 @@
+
+
+
 function t_top(){
 	var oTuser = document.getElementById('t_user');
 	var oTlist = document.getElementById('t_list');
@@ -17,33 +20,6 @@ function t_top(){
 			oTlist.style.display = 'none';
 		},500)
 	}
-
-	function t_left(){
-	var oLeftUl = document.getElementById('t_leftul');
-	var aLeftLi = oLeftUl.getElementsByTagName('li');
-
-	for( var i = 0; i<aLeftLi.length; i++ ){
-		if( i%2 == 0 ){
-			aLeftLi[i].className = 'new_color';
-		}else{
-			aLeftLi[i].className = '';
-		}
-
-		aLeftLi[i].onmouseover = function(){
-		oldColor = this.className;
-		this.className = 'across';
-	}
-
-		aLeftLi[i].onmouseout = function(){
-			
-			this.className = oldColor;
-		}
-
-	}
-
-}
-
-
 
 
 	//鼠标滑过改变颜色
@@ -72,6 +48,30 @@ function t_top(){
 }
 
 
+	function t_left(){
+	var oLeftUl = document.getElementById('t_leftul');
+	var aLeftLi = oLeftUl.getElementsByTagName('li');
+
+	for( var i = 0; i<aLeftLi.length; i++ ){
+		if( i%2 == 0 ){
+			aLeftLi[i].className = 'new_color';
+		}else{
+			aLeftLi[i].className = '';
+		}
+
+		aLeftLi[i].onmouseover = function(){
+		oldColor = this.className;
+		this.className = 'across';
+	}
+
+		aLeftLi[i].onmouseout = function(){
+			
+			this.className = oldColor;
+		}
+
+	}
+
+}
 
 
 function t_onlineLessons(){
