@@ -7,242 +7,207 @@
 <link href="css/select.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" type="text/css" href="css/t_style.css"/>
 <script type="text/javascript" src="js/jquery.js"></script>
+
 <script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
-<script type="text/javascript" src="js/select-ui.min.js"></script>
-<script type="text/javascript" src="js/regist.js"></script>
-<script type="text/javascript" src="editor/kindeditor.js"></script>
+    <script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
+    <script src="js/t_javaScript.js"></script>
+    <script type="text/javascript" src="js/select-ui.min.js"></script>
 <script type="text/javascript">
-$(document).ready(function(e) {
-    $(".select1").uedSelect({
-		width : 345			  
-	});
-	$(".select2").uedSelect({
-		width : 167  
-	});
-	$(".select3").uedSelect({
-		width : 130
-	});
-});
-</script>
-
-<script type="text/javascript">
-$(document).ready(function(){
-  $(".click").click(function(){
-  $(".tip").fadeIn(200);
+$j(document).ready(function(e) {
+    $j(".select1").uedSelect({
+    width : 345       
   });
-
-  
-  $(".sure").click(function(){
-  $(".tip").fadeOut(100);
-});
-
-  $("#ba").click(function(){
-  $(".tip").fadeOut(100);
-});
-  
-  
-
-
+  $j(".select2").uedSelect({
+    width : 100 
+  });
+  $j(".select3").uedSelect({
+    width : 167
+  });
 });
 </script>
-
 
 
 </head>
 
 <body>
-	
-		<div class="top">
-	
-		<div id='t_top'>
-		<div class='t_top'>
-			<div class='t_logo'></div>
-			<ul class='t_nav'>
-				  <li class="active" ><a href="index.html" >我的课程</a></li>
-          <li ><a href="tea_admin_notice.html" >管理员公告</a></li>
-			</ul>
-			<div class='t_user'>
-				<span><a href="">消息<i>10</i></a></span>
-				<div ><img src='images/img14.png' id='t_user'></div>
-			</div>
-		</div>	
-	</div>
-	
-		<div id='t_list'>
-			<div id='t_list_top'>
-				<img src='images/img14.png'>
-				<div class='t_list_top'>
-					<span>用户名lpoiiiiiiiiiii</span>
-					<p>讲师</p>
-				</div>
-			</div>
-			<ul>
-				<li><a href="tea_center.html">个人中心</a></li>
-			
-				<li><a href="">退出</a></li>
-			</ul>
-		</div>
-	
-
-<script src="js/t_javaScript.js"></script>
-<script type="text/javascript">
-	t_top();
-</script>
-
-	
-	
-	
-	</div>
-	<div class="left">
-		<ul id='t_leftul'>
-		<li id="dao"><a href="">导航</a></li>
-		<li><a href="">当前课程:&nbsp;&nbsp;&nbsp;计算机</a></li>
-		<li><a href="tea_notice.html">公告</a></li>
-		<li><a href="tea_prepareList.html">在线备课</a></li>
-		<li><a href="tea_classedit.html">编辑课程</a></li>
-		<li><a href="tea_data.html">课程资料</a></li>
-		<li><a href="tea_student.html">学生管理</a></li>
-		<li><a href="tea_learning_management.html">学习管理</a></li>
-		<li><a href="tea_courseEdit.html">课程管理</a></li>
-		<li><a href="tea_upload.html">上传资料</a></li>
-		<li><a href="tea_talk.html">讨论区</a></li>
-	</ul>
-	<script src="js/t_javaScript.js"></script>
-	<script type="text/javascript">
-		t_left();
-	</script>
-	</div>
-	
-	<div class="mainbody">
-	
-	<div class="place">
-    <span>位置：</span>
-    <ul class="placeul">
-    <li><a href="#">课程管理</a></li>
-    <li><a href="#">教学计划</a></li>
+<div id='t_top'>
+  <div class='t_top'>
+    <div class='t_logo'></div>
+    <ul class='t_nav'>
+      <li class="active" ><a href="index.html" >我的课程</a></li>
+            <li ><a href="tea_admin_notice.html" >管理员公告</a></li>
     </ul>
+    <div class='t_user'>
+      <span><a href="">消息<i>10</i></a></span>
+      <div ><img src='images/img14.png' id='t_user'></div>
     </div>
+  </div>  
+
+  <div id='t_list'>
+    <div id='t_list_top'>
+      <img src='images/img14.png'>
+      <div class='t_list_top'>
+        <span>用户名 张三</span>
+        <p>讲师</p>
+      </div>
+    </div>
+    <ul>
+      <li><a href="tea_center.html">个人中心</a></li>
+            <li><a href="">退出</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class='wrap'>
+  <div id='t_mainBody'>
+    <div id='t_mainBodyLeft'>
+      <ul id='t_leftul'>
+        <li style='background:red;'><a href="">导航</a></li>
+        <li>当前课程:<strong style="padding-left:10px;">计算机</strong></li>
+        <li><a href="tea_notice.html">公告</a></li>
+        <li><a href="tea_prepareList.html">在线备课</a></li>
+        <li><a href="tea_classedit.html">编辑课程</a></li>
+        <li><a href="tea_data.html">课程资料</a></li>
+        <li><a href="tea_student.html">学生管理</a></li>
+        <li><a href="tea_learning_management.html">学习管理</a></li>
+        <li><a href="tea_courseEdit.html">课程管理</a></li>
+        <li><a href="tea_upload.html">上传资料</a></li>
+        <li><a href="tea_talk.html">讨论区</a></li>
+      </ul>
+    </div>
+    <div id='t_mainBodyRight'>
+      <div class="place">
+        <span>位置：</span>
+          <ul class="placeul">
+            <li><a href="#">课程管理</a></li>
+            <li><a href="#" class='active'>教学计划</a></li>
+          </ul>
+        </div>
     
     <div class="formbody">
   
-    	
+      
     
     <div id="usual1" class="usual"> 
-    	<div class="it1">
-    		<div class="itab">
-		  	<ul> 
-		    <li><a href="#tab1" class="selected">教学计划</a></li> 
-		    <li><a href="#tab2">公共资料</a></li> 
-		  	</ul>
-		    </div>
-    	</div>
+      <div class="it1">
+        <div class="itab">
+        <ul> 
+        <li><a href="#tab1" class="selected">教学计划</a></li> 
+        <li><a href="#tab2">公共资料</a></li> 
+        </ul>
+        </div>
+      </div>
      
     
-  	<div id="tab1" class="tabson">
-     <label style="font-size:16px; padding-left:100px;">课程号：3021S001</label>
-     <label style="font-size:16px;padding-left:50px;">课程名：软件开发实训</label>
-     <label style="font-size:16px; padding-left:50px;">课程组长：王老师</label>
-    
-    
-    <br /><br /><br />
-    
-    
-    <table  width="750px;" style="font-size:16px;">
+    <div id="tab1" class="tabson courseEditWidth">
+      <div class='lab'>
+         <label >课程号：3021S001</label>
+         <label >课程名：软件开发实训</label>
+         <label >课程组长：王老师</label>
+      </div>
+    <table  width="750px;" class='courseEdit'>
+     
+        <td  ><label >第一章：水平线</label> 
+          <label class="click" ><a class="l" href="#">添加小节</a></label>
+        </td>
+        <td >
+          
+         <label class="jz"><a href="#" onclick="return confirm('确定删除？')">删除章目</a></label>
+        </td>
+     </tr>
     <tr>
-    <td style="padding-left:150px;" ><label style="font-size:16px;">第一章：水平线</label> </td>
-    <td style="padding-left:150px;"><label class="click" style="font-size:16px; color:#F00"><a class="l" href="#">添加小节</a>&nbsp;&nbsp;&nbsp;&nbsp; </label><a href="#" onclick="return confirm('确定删除？')">删除章目</a></td>
+    <td class='sj'>第一节：这里面放的是box的内容.</td>
+    <td >
+      <a class="click" href="#" > 修改</a>
+      <a href="#"  onclick="return confirm('确定删除？')">删除</a> 
+    </td>
     </tr>
     <tr>
-    <td style="padding-left:200px; font-size:16px;"><br /> 第一节：这里面放的是box的内容.</td>
-    <td style="padding-left:200px; font-size:16px; color:red;"><a class="click" href="#" style=" font-size:15px;"> 修改</a>&nbsp;&nbsp;<a href="#" style=" font-size:15px;" onclick="return confirm('确定删除？')">删除</a> </td>
+    <td class='sj'> 第二节：这里面放的是box的内容.</td>
+    <td ><a class="click" href="#" style=" font-size:15px;"> 修改</a>
+      <a href="#" onclick="return confirm('确定删除？')">删除</a>
+    </td>
     </tr>
     <tr>
-    <td style="padding-left:200px; font-size:16px;"><br /> 第二节：这里面放的是box的内容.</td>
-    <td style="padding-left:200px; font-size:16px; color:red;"><a class="click" href="#" style=" font-size:15px;"> 修改</a>&nbsp;&nbsp;<a href="#" style=" font-size:15px;" onclick="return confirm('确定删除？')">删除</a></td>
+    <td class='sj'> 第三节：这里面放的是box的内容.</td>
+    <td ><a class="click" href="#" style=" font-size:15px;"> 修改</a>
+      <a href="#"  onclick="return confirm('确定删除？')">删除</a>
+    </td>
     </tr>
-    <tr>
-    <td style="padding-left:200px; font-size:16px;"><br /> 第三节：这里面放的是box的内容.</td>
-    <td style="padding-left:200px; font-size:16px; color:red;"><a class="click" href="#" style=" font-size:15px;"> 修改</a>&nbsp;&nbsp;<a href="#" style=" font-size:15px;" onclick="return confirm('确定删除？')">删除</a></td>
-    </tr>
-    
-    
       <tr>
-    <td style="padding-left:150px;" ><label style="font-size:16px;"><br />第二章：表格的使用</label> </td>
-    <td style="padding-left:150px;"><label class="click" style="font-size:16px; color:#F00"><a class="l" href="#">添加小节</a>&nbsp;&nbsp;&nbsp;&nbsp;</label><a href="#" onclick="return confirm('确定删除？')">删除章目</a> </td>
+    <td ><label >第二章：表格的使用</label>
+          <label class="click" ><a class="l" href="#">添加小节</a>
+    </label>
+     </td>
+    <td >
+      <label><a href="#" onclick="return confirm('确定删除？')">删除章目</a></label> 
+  </td>
     </tr>
     <tr>
-    <td style="padding-left:200px; font-size:16px;"><br /> 第一节：这里面放的是box的内容.</td>
-    <td style="padding-left:200px; font-size:16px; color:red;"><a class="click" href="#" style=" font-size:15px;"> 修改</a>&nbsp;&nbsp;<a href="#" style=" font-size:15px;" onclick="return confirm('确定删除？')">删除</a></td>
+    <td class='sj'>第一节：这里面放的是box的内容.</td>
+    <td ><a class="click" href="#" > 修改</a>
+      <a href="#"  onclick="return confirm('确定删除？')">删除</a>
+    </td>
     </tr>
     <tr>
-    <td style="padding-left:200px; font-size:16px;"><br /> 第二节：这里面放的是box的内容.</td>
-    <td style="padding-left:200px; font-size:16px; color:red;"><a class="click" href="#" style=" font-size:15px;"> 修改</a>&nbsp;&nbsp;<a href="#" style=" font-size:15px;" onclick="return confirm('确定删除？')">删除</a></td>
+    <td class='sj'>第二节：这里面放的是box的内容.</td>
+    <td ><a class="click" href="#" > 修改</a>
+      <a href="#" onclick="return confirm('确定删除？')">删除</a>
+    </td>
     </tr>
     <tr>
-    <td style="padding-left:200px; font-size:16px;"><br /> 第三节：这里面放的是box的内容.</td>
-    <td style="padding-left:200px; font-size:16px; color:red;"><a class="click" href="#" style=" font-size:15px;"> 修改</a>&nbsp;&nbsp;<a href="#" style=" font-size:15px;" onclick="return confirm('确定删除？')">删除</a></td>
+    <td class='sj'>第三节：这里面放的是box的内容.</td>
+    <td >
+      <a class="click" href="#"> 修改</a>
+      <a href="#"  onclick="return confirm('确定删除？')">删除</a>
+    </td>
     </tr>
     
     </table>
-
-  <br />
-   <label style="padding:70px;">&nbsp;</label>
-  <label class="click" style="font-size:18px; color:#F00"">添加章目</label> 
-	
+   
+  <label class="click ad">添加章目</label> 
+  
     </div> 
     
     
-  	<div id="tab2" class="tabson">
+    <div id="tab2" class="tabson">
     
     
-    <ul class="seachform" style="padding-left:50px;">
+    <ul class="seachform courseEditLi" >
     
-    <li><label>类型</label>  
-    <div class="vocation">
-    <select class="select3">
-    <option selected="selected">视频</option>
-    <option>文档</option>
-    
-    </select>
-    </div>
+    <li><label >类型</label>  
+      <div class="vocation">
+        <select class="select2">
+          <option selected="selected">视频</option>
+          <option>文档</option>
+        </select>
+      </div>
     </li>
-      <li><label>学期</label>  
-    <div class="vocation">
-    <select style="width:100px;" class="select3" >
-    <option selected="selected">2014-2015（1）</option>
-    <option>2014-2015（2）</option>
-    <option selected="selected">2013-2014（1）</option>
-    <option>2013-2014（2）</option>
-    
-    </select>
-    </div>
+    <li><label>学期</label>  
+      <div class="vocation">
+        <select  class="select3" >
+          <option selected="selected">2014-2015（1）</option>
+          <option>2014-2015（2）</option>
+          <option selected="selected">2013-2014（1）</option>
+          <option>2013-2014（2）</option>
+        </select>
+      </div>
     </li>
-    <li><label>&nbsp;</label><input name="" type="button" class="scbtn" value="查询"/></li>
+    <li><input name="" type="button" class="scbtn" value="查询"/></li>
     
     </ul>
-<!--    <br />-->
-<!--    <p>&nbsp;</p>-->
-<!--    -->
-<!--    <p style="font-size:16px;padding-left:150px;"><a style="font-size:16px;">视频一：使用资源面板&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2014-2-2</a>-->
-<!--    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="font-size:16px; color:#F00"">删除</a><p><br />-->
-<!--    <p style="font-size:16px; padding-left:150px;"><a style="font-size:16px;">视频二：使用资源面板&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2014-2-2</a>-->
-<!--     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="font-size:16px; color:#F00"">删除</a><p><br />-->
-<!--    <p style="font-size:16px; padding-left:150px;"><a style="font-size:16px;">视频三：使用资源面板&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2014-2-2</a>-->
-<!--     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="font-size:16px; color:#F00"">删除</a><p><br />-->
-<!--    <p style="font-size:16px; padding-left:150px;"><a style="font-size:16px;">视频四：使用资源面板&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2014-2-2</a>-->
-<!--     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="font-size:16px; color:#F00"">删除</a><p><br />-->
-<!--    <p style="font-size:16px; padding-left:150px;"><a style="font-size:16px;">视频五：使用资源面板&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2014-2-2</a>-->
-<!--     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="font-size:16px; color:#F00"">删除</a><p><br />-->
-<!--    <p style="font-size:16px; padding-left:150px;"><a style="font-size:16px;">视频六：使用资源面板&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2014-2-2</a>-->
-<!--     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="font-size:16px; color:#F00"">删除</a><p>-->
+
  
-   		             <table class="imgtable">
+                   <table class="imgtable">
 
                     <tbody>
                     
                      <tr>
                      <td>视频一</td>
-                    <td><a href="#">计算机课程视频</a><p>发布时间：2013-10-12 09:25:18</p></td>
+                    <td>
+                      <a href="#">计算机课程视频</a>
+                      <p>发布时间：2013-10-12 09:25:18</p>
+                    </td>
                 
                     <td>课程一</td>
                     <td>删除</td>
@@ -251,7 +216,10 @@ $(document).ready(function(){
                     
                    <tr>
                      <td>视频一</td>
-                    <td><a href="#">计算机课程视频</a><p>发布时间：2013-10-12 09:25:18</p></td>
+                    <td>
+                      <a href="#">计算机课程视频</a>
+                      <p>发布时间：2013-10-12 09:25:18</p>
+                    </td>
                 
                     <td>课程一</td>
                     <td>删除</td>
@@ -259,7 +227,10 @@ $(document).ready(function(){
                     </tr>
                     <tr>
                      <td>视频一</td>
-                    <td><a href="#">计算机课程视频</a><p>发布时间：2013-10-12 09:25:18</p></td>
+                    <td>
+                      <a href="#">计算机课程视频</a>
+                      <p>发布时间：2013-10-12 09:25:18</p>
+                    </td>
                 
                     <td>课程一</td>
                     <td>删除</td>
@@ -267,49 +238,65 @@ $(document).ready(function(){
                     </tr>
                    <tr>
                      <td>视频一</td>
-                    <td><a href="#">计算机课程视频</a><p>发布时间：2013-10-12 09:25:18</p></td>
-                
+                    <td>
+                      <a href="#">计算机课程视频</a>
+                      <p>发布时间：2013-10-12 09:25:18</p>
+                    </td>
+
                     <td>课程一</td>
                     <td>删除</td>
                     <td>下载</td>
                     </tr>
-                
-                    
                     </tbody>
                     
                 </table>
    
     </div>  
-    
-    
+
         <div class="tip">
-	    	<div class="tiptop"><span>添加章目/小节</span><a id="ba"></a> </div>
-	        
-	      <div class="tipinfo">
-	       
-	        <div class="tipright" style="font-size:16px;">
-<!--			        标题：<input  type="text" class="cinput" style="border-color:#0FF;margin-bottom: 20px;"/>-->
-<!--			       <span style="float: left;margin-left: 260px;margin-top:-40px;height: 10px;">sdsdddd</span><br />-->
-			        内容：<input type="text" class="cinput" onblur=" return valinickcs()" id="txtNickcs"/>
-	       			<span style="float: left;margin-left: 260px;margin-top:-20px;height: 10px;color: red;" id="nickcs_info"></span><br />
-	        </div>
-	       </div>
-	        
-	        <input name="" type="button"  class="sure" value="确定" style="margin-top: 15px;margin-left: 180px"/>
-    
-    	</div>
-
-       
-	</div> 
-    
- 
-	<script type="text/javascript"> 
-      $("#usual1 ul").idTabs(); 
-    </script>
- 
+                <div class="tiptop">
+                  <span>添加章目/小节</span>
+                  <a id="ba"></a> 
+                </div> 
+                <div class="tipinfo">
+                  <div class="tipright">
+                    <label id="nickcs_info">  内容：</label><input type="text" class="cinput" onblur=" return valinickcs()" id="txtNickcs"/>
+                     
+                  </div>
+                 </div>
+                  <input name="" type="button"  class="sure" value="确定"/>
+              </div></div>
+  </div> 
+         <div class='mask' id='mask' onslectstart='return false'></div>
+        </div>
     </div>
-
-	</div>
+  </div>
+</div>
+<script type="text/javascript">
+    t_top(); 
+    t_left();
+    $j("#usual1 ul").idTabs(); 
+    $j('.tablelist tbody tr:odd').addClass('odd');
+</script>
+<script type="text/javascript">
+$j(document).ready(function(){
+  $j(".click").click(function(){
+  $j(".tip").fadeIn(200);
+  $("mask").style.display = 'block';
+  });
+  
+  $j(".sure").click(function(){
+  $j(".tip").fadeOut(100);
+  $("mask").style.display = 'none';
+});
+  $j("#ba").click(function(){
+  $j(".tip").fadeOut(100);
+  $("mask").style.display = 'none';
+});
+  
+  
+});
+</script>
 </body>
 
 </html>

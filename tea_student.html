@@ -12,42 +12,43 @@
 <link rel="stylesheet" type="text/css" href="css/t_style.css"/>
 <script type="text/javascript"src="js/formValidator-4.0.1.js"></script>
 <script type="text/javascript" src="js/regist.js"></script>
+<script src="js/t_javaScript.js"></script>
 <script type="text/javascript">
-$(document).ready(function(){
+$j(document).ready(function(){
 
-  $("#rpwdb,#rpwdb2").click(function(){
-  $("#rpwd").fadeIn(200);
+  $j("#rpwdb,#rpwdb2").click(function(){
+  $j("#rpwd").fadeIn(200);
   });
   
-  $(".tiptop a").click(function(){
-  $("#rpwd").fadeOut(200);});
+  $j(".tiptop a").click(function(){
+  $j("#rpwd").fadeOut(200);});
 
-  $("#s1").click(function(){
-  $("#rpwd").fadeOut(100);
+  $j("#s1").click(function(){
+  $j("#rpwd").fadeOut(100);
 });
-  $("#update").click(function(){
-  $("#up").fadeIn(200);
+  $j("#update").click(function(){
+  $j("#up").fadeIn(200);
   });
   
-  $(".tiptop a").click(function(){
-  $("#up").fadeOut(200);});
+  $j(".tiptop a").click(function(){
+  $j("#up").fadeOut(200);});
 
-  $("#s2").click(function(){
-  $("#up").fadeOut(100);
+  $j("#s2").click(function(){
+  $j("#up").fadeOut(100);
 });
 
 });
 </script>
   
 <script type="text/javascript">
-$(document).ready(function(e) {
-    $(".select1").uedSelect({
+$j(document).ready(function(e) {
+    $j(".select1").uedSelect({
 		width : 345			  
 	});
-	$(".select2").uedSelect({
+	$j(".select2").uedSelect({
 		width : 167  
 	});
-	$(".select3").uedSelect({
+	$j(".select3").uedSelect({
 		width : 100
 	});
 });
@@ -55,77 +56,57 @@ $(document).ready(function(e) {
 </head>
 
 <body>
-	
-	
-		<div class="top">
-	
-		<div id='t_top'>
-		<div class='t_top'>
-			<div class='t_logo'></div>
-			<ul class='t_nav'>
-				<li class="active" ><a href="index.html" >我的课程</a></li>
-                <li ><a href="tea_admin_notice.html" >管理员公告</a></li>
-			</ul>
-			<div class='t_user'>
-				<span><a href="">消息<i>10</i></a></span>
-				<div ><img src='images/img14.png' id='t_user'></div>
-			</div>
-		</div>	
-	</div>
-	
-		<div id='t_list'>
-			<div id='t_list_top'>
-				<img src='images/img14.png'>
-				<div class='t_list_top'>
-					<span>用户名lpoiiiiiiiiiii</span>
-					<p>讲师</p>
-				</div>
-			</div>
-			<ul>
-				<li><a href="tea_center.html">个人中心</a></li>
-		
-				<li><a href="">退出</a></li>
-			</ul>
-		</div>
-	
+<div id='t_top'>
+    <div class='t_top'>
+        <div class='t_logo'></div>
+        <ul class='t_nav'>
+            <li class="active" ><a href="index.html" >我的课程</a></li>
+            <li ><a href="tea_admin_notice.html" >管理员公告</a></li>
+        </ul>
+        <div class='t_user'>
+            <span><a href="">消息<i>10</i></a></span>
+            <div ><img src='images/img14.png' id='t_user'></div>
+        </div>
+    </div>  
 
-<script src="js/t_javaScript.js"></script>
-<script type="text/javascript">
-	t_top();
-</script>
-
-	
-	
-	
-	</div>
-	<div class="left">
-		<ul id='t_leftul'>
-		<li id="dao"><a href="">导航</a></li>
-		<li><a href="">当前课程:&nbsp;&nbsp;&nbsp;计算机</a></li>
-		<li><a href="tea_notice.html">公告</a></li>
-		<li><a href="tea_prepareList.html">在线备课</a></li>
-		<li><a href="tea_classedit.html">编辑课程</a></li>
-		<li><a href="tea_data.html">课程资料</a></li>
-		<li><a href="tea_student.html">学生管理</a></li>
-		<li><a href="tea_learning_management.html">学习管理</a></li>
-		<li><a href="tea_courseEdit.html">课程管理</a></li>
-		<li><a href="tea_upload.html">上传资料</a></li>
-		<li><a href="tea_talk.html">讨论区</a></li>
-	</ul>
-	<script src="js/t_javaScript.js"></script>
-	<script type="text/javascript">
-		t_left();
-	</script>
-	</div>
-	
-	
-	<div class="mainbody">
-	
-	<div class="place">
+    <div id='t_list'>
+        <div id='t_list_top'>
+            <img src='images/img14.png'>
+            <div class='t_list_top'>
+                <span>用户名 张三</span>
+                <p>讲师</p>
+            </div>
+        </div>
+        <ul>
+            <li><a href="tea_center.html">个人中心</a></li>
+            <li><a href="">退出</a></li>
+        </ul>
+    </div>
+</div>
+<div class='wrap'>
+    <div id='t_mainBody'>
+        <div id='t_mainBodyLeft'>
+           <ul id='t_leftul'>
+                <li style='background:red;'><a href="">导航</a></li>
+                <li>当前课程:<strong style="padding-left:10px;">计算机</strong></li>
+                <li><a href="tea_notice.html">公告</a></li>
+                <li><a href="tea_prepareList.html">在线备课</a></li>
+                <li><a href="tea_classedit.html">编辑课程</a></li>
+                <li><a href="tea_data.html">课程资料</a></li>
+                <li><a href="tea_student.html">学生管理</a></li>
+                <li><a href="tea_learning_management.html">学习管理</a></li>
+                <li><a href="tea_courseEdit.html">课程管理</a></li>
+                <li><a href="tea_upload.html">上传资料</a></li>
+                <li><a href="tea_talk.html">讨论区</a></li>
+             </ul>
+    
+        </div>
+        <div id='t_mainBodyRight'>
+            <div class="place">
     <span>位置：</span>
     <ul class="placeul">
     <li><a href="#">首页</a></li>
-    <li><a href="#">学生管理</a></li>
+    <li><a href="#" class='active'>学生管理</a></li>
     </ul>
     </div>
     
@@ -134,7 +115,7 @@ $(document).ready(function(e) {
            
     
     
-            <ul class="seachform">
+            <ul class="seachform courseEditLi">
             
             <li><label>查询方式</label>  
             <div class="vocation">
@@ -145,16 +126,15 @@ $(document).ready(function(e) {
             </select>
             </div>
             </li>
-            <li><label></label><input name="" type="text" class="scinput" /></li>
-           
-            <li><label>&nbsp;</label><input name="" type="button" class="scbtn" value="查询"/></li>
+            <li><label>&nbsp;</label><input name="" type="text" class="scinput" /></li>
+           <li><input name="" type="button" class="scbtn" value="查询"/></li>
             
             </ul>
     
     
     <table class="tablelist">
-    	<thead>
-    	<tr>
+        <thead>
+        <tr>
         <th><input name="" type="checkbox" value="" checked="checked"/></th>
         <th>学号</th>
         <th>姓名</th>
@@ -244,7 +224,7 @@ $(document).ready(function(e) {
     
     </div>  
        
-	</div> 
+    </div> 
  
 
         <div class="tipc" id="rpwd">
@@ -312,9 +292,16 @@ $(document).ready(function(e) {
                 <li><label>&nbsp;</label>
                 <input style="margin-left:80px;" type="button" class="btn" id="s2" value="确认保存"/></li>
                 </ul>
-        
+     
+            
         </div>
-    
+    </div>
+</div>	
+<script type="text/javascript">
+    t_top();
+    t_left();
+    prepareList();
+</script>
 </body>
 
 </html>

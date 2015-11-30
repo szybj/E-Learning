@@ -4,13 +4,17 @@
 	<meta charset="UTF-8">
 	<title>备课列表</title>
 	
-	<link rel="stylesheet" type="text/css" href="css/tt_style.css">
+<link rel="stylesheet" type="text/css" href="css/tt_style.css">
+<link rel="stylesheet" type="text/css" href="css/t_style.css"> 
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="Shortcut Icon" href="images/logo.ico">
     <script type="text/javascript" src="editor/kindeditor.js"></script>
-	
+	<script type="text/javascript" src="js/t_Video.js"></script>
+<script type="text/javascript" src="js/t_Data.js"></script>
+<script type="text/javascript" src="js/t_Homework.js"></script>
     
 </head>
-<body style='height:2000px;'>
+<body>
     <script type="text/javascript">
     KE.show({
         id : 'content7',
@@ -18,77 +22,60 @@
     });
   </script>
   
-  <div class="top">
-	
-		<div id='t_top'>
-		<div class='t_top'>
-			<div class='t_logo'></div>
-			<ul class='t_nav'>
-				<li class="active" ><a href="index.html" >我的课程</a></li>
-                <li ><a href="tea_admin_notice.html" >管理员公告</a></li>
-			</ul>
-			<div class='t_user'>
-				<span><a href="">消息<i>10</i></a></span>
-				<div ><img src='images/img14.png' id='t_user'></div>
-			</div>
-		</div>	
-	</div>
-	
-		<div id='t_list'>
-			<div id='t_list_top'>
-				<img src='images/img14.png'>
-				<div class='t_list_top'>
-					<span>用户名lpoiiiiiiiiiii</span>
-					<p>讲师</p>
-				</div>
-			</div>
-			<ul>
-				<li><a href="tea_center.html">个人中心</a></li>
-				<li><a href="">退出</a></li>
-			</ul>
-		</div>
-	
+  <div id='t_top'>
+    <div class='t_top'>
+        <div class='t_logo'></div>
+        <ul class='t_nav'>
+            <li class="active" ><a href="index.html" >我的课程</a></li>
+            <li ><a href="tea_admin_notice.html" >管理员公告</a></li>
+        </ul>
+        <div class='t_user'>
+            <span><a href="">消息<i>10</i></a></span>
+            <div ><img src='images/img14.png' id='t_user'></div>
+        </div>
+    </div>  
 
-<script src="js/tt_javaScript.js"></script>
-<script type="text/javascript">
-	t_top();
-</script>
+    <div id='t_list'>
+        <div id='t_list_top'>
+            <img src='images/img14.png'>
+            <div class='t_list_top'>
+                <span>用户名 张三</span>
+                <p>讲师</p>
+            </div>
+        </div>
+        <ul>
+            <li><a href="tea_center.html">个人中心</a></li>
+            <li><a href="">退出</a></li>
+        </ul>
+    </div>
+</div>
 
-	
-	
-	
-	</div>
-	<div class="left">
-		<ul id='t_leftul'>
-		<li id="dao"><a href="">导航</a></li>
-		<li><a href="">当前课程:&nbsp;&nbsp;&nbsp;计算机</a></li>
-		<li><a href="tea_notice.html">公告</a></li>
-		<li><a href="tea_prepareList.html">在线备课</a></li>
-		<li><a href="tea_classedit.html">编辑课程</a></li>
-		<li><a href="tea_data.html">课程资料</a></li>
-		<li><a href="tea_student.html">学生管理</a></li>
-		<li><a href="tea_learning_management.html">学习管理</a></li>
-		<li><a href="tea_courseEdit.html">课程管理</a></li>
-		<li><a href="tea_upload.html">上传资料</a></li>
-		<li><a href="tea_talk.html">讨论区</a></li>
-	</ul>
-	<script src="js/t_javaScript.js"></script>
-	<script type="text/javascript">
-		t_left();
-	</script>
-	</div>
-	
-	
-   <div class="mainbody">
-    
-   <div class="formbody">
-	<div class="place">
-	    <span>位置：</span>
-	    <ul class="placeul">
-		    <li><a href="#">我的课程</a></li>
-		    <li><a href="#" class='active'>在线备课</a></li>
-	    </ul>
-    </div> 	
+<div class='wrap'>
+    <div id='t_mainBody'>
+        <div id='t_mainBodyLeft'>
+            <ul id='t_leftul'>
+                <li style='background:red;'><a href="">导航</a></li>
+                <li>当前课程:<strong style="padding-left:10px;">计算机</strong></li>
+                <li><a href="tea_notice.html">公告</a></li>
+                <li><a href="tea_prepareList.html">在线备课</a></li>
+                <li><a href="tea_classedit.html">编辑课程</a></li>
+                <li><a href="tea_data.html">课程资料</a></li>
+                <li><a href="tea_student.html">学生管理</a></li>
+                <li><a href="tea_learning_management.html">学习管理</a></li>
+                <li><a href="tea_courseEdit.html">课程管理</a></li>
+                <li><a href="tea_upload.html">上传资料</a></li>
+                <li><a href="tea_talk.html">讨论区</a></li>
+            </ul>
+        </div>
+        <div id='t_mainBodyRight'>
+
+    <div class="place">
+        <span>位置：</span>
+        <ul class="placeul">
+            <li><a href="#">我的课程</a></li>
+            <li><a href="#" class='active'>在线备课</a></li>
+        </ul>
+    </div>  
 <div class='prepareListBox' id='prepareListBox'>
         <div class='chapter'>
             <h3> 
@@ -429,6 +416,7 @@
                                   <tr>
                                     <td><b>文件路径</b></td>
                                     <td width="200"></td> 
+                                    <td width="200"></td> 
 
                                   </tr>
                                 </thead>
@@ -584,19 +572,20 @@
             <input name="" type="button" class="btn" value="确定"/>
             <a href="javascript:hidden();"><input name="" type="button" class="btn"  value="取消"/></a>
         </div>
-    </div>
+
    
 </div>
 
-<!-- onslectstart='return false'  防止鼠标选中 -->
- <div class='mask' id='mask' onslectstart='return false'></div>
- </div>
-	</div> 
-<script src="js/tt_javaScript.js"></script>
-<script type="text/javascript" src="js/t_Video.js"></script>
-<script type="text/javascript" src="js/t_Data.js"></script>
-<script type="text/javascript" src="js/t_Homework.js"></script>
+        <!-- onslectstart='return false'  防止鼠标选中 -->
+        <div class='mask' id='mask' onslectstart='return false'></div>
+
+</div>
+
+<script src="js/t_javaScript.js"></script>
+
 <script type="text/javascript">
+    t_top();
+    t_left();
     prepareList();
 </script>
 <script src="js/move.js"></script>

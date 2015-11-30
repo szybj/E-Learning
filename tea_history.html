@@ -6,9 +6,7 @@
 <link href="css/style.css" rel="stylesheet" type="text/css" />
 <link href="css/select.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
-<script type="text/javascript" src="js/select-ui.min.js"></script>
-<script type="text/javascript" src="editor/kindeditor.js"></script>
+<script src="js/t_javaScript.js"></script>
 <link rel="stylesheet" type="text/css" href="css/t_style.css"/>
 <style type="text/css">  
 #box,#box1,#box2,#box3,#box4{padding-left:200px; font-size:16px; }   
@@ -36,136 +34,110 @@ if(targetObj.style.display!="none"){
 </script>  
 
   
-<script type="text/javascript">
-$(document).ready(function(e) {
-    $(".select1").uedSelect({
-		width : 345			  
-	});
-	$(".select2").uedSelect({
-		width : 167  
-	});
-	$(".select3").uedSelect({
-		width : 100
-	});
-});
-</script>
+
 </head>
 
 <body>
-	
-	
-		<div class="top">
-	
-		<div id='t_top'>
-		<div class='t_top'>
-			<div class='t_logo'></div>
-			<ul class='t_nav'>
-				<li class="active" ><a href="index.html" >我的课程</a></li>
-                <li ><a href="tea_admin_notice.html" >管理员公告</a></li>
-			</ul>
-			<div class='t_user'>
-				<span><a href="">消息<i>10</i></a></span>
-				<div ><img src='images/img14.png' id='t_user'></div>
-			</div>
-		</div>	
-	</div>
-	
-		<div id='t_list'>
-			<div id='t_list_top'>
-				<img src='images/img14.png'>
-				<div class='t_list_top'>
-					<span>用户名lpoiiiiiiiiiii</span>
-					<p>讲师</p>
-				</div>
-			</div>
-			<ul>
-				<li><a href="tea_center.html">个人中心</a></li>
-			
-				<li><a href="">退出</a></li>
-			</ul>
-		</div>
-	
+<div id='t_top'>
+    <div class='t_top'>
+        <div class='t_logo'></div>
+        <ul class='t_nav'>
+            <li class="active" ><a href="index.html" >我的课程</a></li>
+            <li ><a href="tea_admin_notice.html" >管理员公告</a></li>
+        </ul>
+        <div class='t_user'>
+            <span><a href="">消息<i>10</i></a></span>
+            <div ><img src='images/img14.png' id='t_user'></div>
+        </div>
+    </div>  
 
-	<script src="js/t_javaScript.js"></script>
-	<script type="text/javascript">
-		t_top();
-	</script>
-
-	</div>
-	
-	
-	<div class="mainbody2">
-	<div class="place">
-    <span>位置：</span>
-    <ul class="placeul">
-    <li><a href="#">备课</a></li>
-    <li><a href="#">历史备课列表</a></li>
-    </ul>
+    <div id='t_list'>
+        <div id='t_list_top'>
+            <img src='images/img14.png'>
+            <div class='t_list_top'>
+                <span>用户名 张三</span>
+                <p>讲师</p>
+            </div>
+        </div>
+        <ul>
+            <li><a href="tea_center.html">个人中心</a></li>
+            <li><a href="">退出</a></li>
+        </ul>
     </div>
-    
-    <div class="formbody" style="margin-left: 20%">
-    
-    <div class="history">
-    	<label style="font-size:16px;">第一章：</label> 水平线      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-   		<a href="###" onclick="openShutManager(this,'box4',false,'收起','展开')" style="font-size:16px;">展开</a>
-  	 </div>
-	   <div id="box4" style="display:none">  
-	      <p style=" font-size:16px;height:30px;"> <a  style="font-size:16px;" href="tea_history_detail.html">第一大节：这里面放的是box的内容.  </a>
-	      &nbsp;&nbsp;&nbsp;2012-1-2</p> 
-	      <p style="font-size:16px;  height:30px;"> <a  style="font-size:16px;" href="tea_history_detail.html">第二大节：这里面放的是box的内容.</a> &nbsp;&nbsp;&nbsp;2012-1-2</p> 
-	      <p style="font-size:16px;  height:30px;"> <a  style="font-size:16px;" href="tea_history_detail.html">第三大节：这里面放的是box的内容.</a> &nbsp;&nbsp;&nbsp;2012-1-2</p>  
-		</div> 
-   
-    <div class="history">
-    <label style="font-size:16px;">第二章：</label> 表格的使用  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  	 <a href="###" onclick="openShutManager(this,'box3',false,'收起','展开')" style="font-size:16px;">展开</a>
-   	</div>
-	   <div id="box3" style="display:none">  
-	      <p style="font-size:16px; height:30px;"> 第一大节：这里面放的是box的内容.</p> 
-	      <p style="font-size:16px;  height:30px;"> 第二大节：这里面放的是box的内容.</p> 
-	      <p style="font-size:16px;  height:30px;"> 第三大节：这里面放的是box的内容.</p>  
-	  </div>
-    <div class="history"><label style="font-size:16px;">第三章：
-    </label> 所属分类: javascript  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-   <a href="###" onclick="openShutManager(this,'box2',false,'收起','展开')" style="font-size:16px;">展开</a>
-   </div>
-   <div id="box2" style="display:none">  
-    <p style="font-size:16px; height:30px;"> 第一大节：这里面放的是box的内容.</p> 
-    <p style="font-size:16px;  height:30px;"> 第二大节：这里面放的是box的内容.</p> 
-    <p style="font-size:16px;  height:30px;"> 第三大节：这里面放的是box的内容.</p>  
-  </div>
-  
-      <div class="history"><label style="font-size:16px;">第四章：</label> 所属分类: javascript  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-   <a href="###" onclick="openShutManager(this,'box1',false,'收起','展开')" style="font-size:16px;">展开</a>
-   </div>
-   <div id="box1" style="display:none">  
-    <p style="font-size:16px; height:30px;"> 第一大节：这里面放的是box的内容.</p> 
-    <p style="font-size:16px;  height:30px;"> 第二大节：这里面放的是box的内容.</p> 
-    <p style="font-size:16px;  height:30px;"> 第三大节：这里面放的是box的内容.</p>  
-  </div>
-  
-      <div class="history"><label style="font-size:16px;">第五章：</label> 所属分类: javascript  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-   <a href="###" onclick="openShutManager(this,'box',false,'收起','展开')" style="font-size:16px;">展开</a>
-   </div>
-   <div id="box" style="display:none">  
-    <p style="font-size:16px; height:30px;"> 第一大节：这里面放的是box的内容.</p> 
-    <p style="font-size:16px;  height:30px;"> 第二大节：这里面放的是box的内容.</p> 
-    <p style="font-size:16px;  height:30px;"> 第三大节：这里面放的是box的内容.</p>  
-  </div>
-  <br /><br />
-   <li style="padding-left:230px;">
-   <a href="#"><input name="" type="button" class="scbtn" value="返回"/></a>
-   </li>
-       
-	</div> 
- 
-	<script type="text/javascript"> 
-      $("#usual1 ul").idTabs(); 
-    </script>
-    
-    
 </div>
 
+<div class='wrap'>
+	<div id='t_mainBody'>
+		<div id='t_mainBodyRight'>
+			<div class="place">
+			    <span>位置：</span>
+		        <ul class="placeul">
+			        <li><a href="#">备课</a></li>
+			        <li><a href="#" class='active'>历史备课列表</a></li>
+		        </ul>
+	    	</div>
+			    <div class="formbody">
+				    <div class="history">
+				    	<label style="font-size:16px;">第一章：</label> 水平线      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				   		<a href="###" onclick="openShutManager(this,'box4',false,'收起','展开')" style="font-size:16px;">展开</a>
+				  	</div>
+				    <div id="box4" style="display:none">  
+				      <p style=" font-size:16px;height:30px;"> <a  style="font-size:16px;" href="tea_history_detail.html">第一大节：这里面放的是box的内容.  </a>
+				      &nbsp;&nbsp;&nbsp;2012-1-2</p> 
+				      <p style="font-size:16px;  height:30px;"> <a  style="font-size:16px;" href="tea_history_detail.html">第二大节：这里面放的是box的内容.</a> &nbsp;&nbsp;&nbsp;2012-1-2</p> 
+				      <p style="font-size:16px;  height:30px;"> <a  style="font-size:16px;" href="tea_history_detail.html">第三大节：这里面放的是box的内容.</a> &nbsp;&nbsp;&nbsp;2012-1-2</p>  
+					</div> 
+			   
+				    <div class="history">
+				    	<label style="font-size:16px;">第二章：</label> 表格的使用  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				  	 	<a href="###" onclick="openShutManager(this,'box3',false,'收起','展开')" style="font-size:16px;">展开</a>
+				   	</div>
+					   <div id="box3" style="display:none">  
+					      <p style="font-size:16px; height:30px;"> 第一大节：这里面放的是box的内容.</p> 
+					      <p style="font-size:16px;  height:30px;"> 第二大节：这里面放的是box的内容.</p> 
+					      <p style="font-size:16px;  height:30px;"> 第三大节：这里面放的是box的内容.</p>  
+					  </div>
+				    <div class="history"><label style="font-size:16px;">第三章：
+					    </label> 所属分类: javascript  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					   	<a href="###" onclick="openShutManager(this,'box2',false,'收起','展开')" style="font-size:16px;">展开</a>
+				   	</div>
+				  	 <div id="box2" style="display:none">  
+				    <p style="font-size:16px; height:30px;"> 第一大节：这里面放的是box的内容.</p> 
+				    <p style="font-size:16px;  height:30px;"> 第二大节：这里面放的是box的内容.</p> 
+				    <p style="font-size:16px;  height:30px;"> 第三大节：这里面放的是box的内容.</p>  
+				  	</div>
+			  
+				    <div class="history"><label style="font-size:16px;">第四章：</label> 所属分类: javascript  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				  		 <a href="###" onclick="openShutManager(this,'box1',false,'收起','展开')" style="font-size:16px;">展开</a>
+				    </div>
+				    <div id="box1" style="display:none">  
+					    <p style="font-size:16px; height:30px;"> 第一大节：这里面放的是box的内容.</p> 
+					    <p style="font-size:16px;  height:30px;"> 第二大节：这里面放的是box的内容.</p> 
+					    <p style="font-size:16px;  height:30px;"> 第三大节：这里面放的是box的内容.</p>  
+				    </div>
+			  
+			        <div class="history"><label style="font-size:16px;">第五章：</label> 所属分类: javascript  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			        <a href="###" onclick="openShutManager(this,'box',false,'收起','展开')" style="font-size:16px;">展开</a>
+			        </div>
+				    <div id="box" style="display:none">  
+					    <p style="font-size:16px; height:30px;"> 第一大节：这里面放的是box的内容.</p> 
+					    <p style="font-size:16px;  height:30px;"> 第二大节：这里面放的是box的内容.</p> 
+					    <p style="font-size:16px;  height:30px;"> 第三大节：这里面放的是box的内容.</p>  
+				    </div>
+
+				   <div style="padding-left:230px;">
+				   <a href="#"><input name="" type="button" class="scbtn" value="返回"/></a>
+				   </div>
+			       
+				</div> 
+			 
+		</div>
+	</div>
+</div>  
+<script type="text/javascript">
+t_top(); 
+	$j("#usual1 ul").idTabs(); 
+</script>
 
 </body>
 

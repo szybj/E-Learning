@@ -9,89 +9,79 @@
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
 <script type="text/javascript" src="js/select-ui.min.js"></script>
-<script type="text/javascript" src="editor/kindeditor.js"></script>
+<script src="js/t_javaScript.js"></script>
 <link rel="stylesheet" type="text/css" href="css/t_style.css"/>
-<script type="text/javascript" src="js/regist.js"></script>
 <script type="text/javascript">
-    KE.show({
-        id : 'content7',
-        cssPath : './index.css'
+    $j(document).ready(function(e) {
+    $j(".select1").uedSelect({
+        width : 345           
     });
-  </script>
-  
-<script type="text/javascript">
-$(document).ready(function(e) {
-    $(".select1").uedSelect({
-		width : 345			  
-	});
-	$(".select2").uedSelect({
-		width : 167  
-	});
-	$(".select3").uedSelect({
-		width : 100
-	});
+    $j(".select2").uedSelect({
+        width : 167  
+    });
+    $j(".select3").uedSelect({
+        width : 100
+    });
 });
 </script>
 </head>
 
 <body>
-	<div class="top">
-	
-		<div id='t_top'>
-    		<div class='t_top'>
-    			<div class='t_logo'></div>
-    			<ul class='t_nav'>
-    				<li class="active" ><a href="index.html" >我的课程</a></li>
-                    <li ><a href="tea_admin_notice.html" >管理员公告</a></li>
-    			</ul>
-    			<div class='t_user'>
-    				<span><a href="">消息<i>10</i></a></span>
-    				<div ><img src='images/img14.png' id='t_user'></div>
-    			</div>
-    		</div>	
-	    </div>
-	
-    	<div id='t_list'>
-    		<div id='t_list_top'>
-    			<img src='images/img14.png'>
-    			<div class='t_list_top'>
-    				<span>用户名lpoiiiiiiiiiii</span>
-    				<p>讲师</p>
-    			</div>
-    		</div>
-    		<ul>
-    			<li><a href="tea_center.html">个人中心</a></li>
-    		
-    			<li><a href="">退出</a></li>
-    		</ul>
-    	</div>
-	
-	</div>
-	<div class="left">
-		<ul id='t_leftul'>
-    		<li id="dao"><a href="">导航</a></li>
-    		<li><a href="">当前课程:&nbsp;&nbsp;&nbsp;计算机</a></li>
-    		<li><a href="tea_notice.html">公告</a></li>
-    		<li><a href="tea_prepareList.html">在线备课</a></li>
-    		<li><a href="tea_classedit.html">编辑课程</a></li>
-    		<li><a href="tea_data.html">课程资料</a></li>
-    		<li><a href="tea_student.html">学生管理</a></li>
-    		<li><a href="tea_learning_management.html">学习管理</a></li>
-    		<li><a href="tea_courseEdit.html">课程管理</a></li>
-    		<li><a href="tea_upload.html">上传资料</a></li>
-    		<li><a href="tea_talk.html">讨论区</a></li>
-	   </ul>
-	</div>
 
-	<div class="mainbody">
-    	<div class="place">
-            <span>位置：</span>
-            <ul class="placeul">
-                <li><a href="#">我的课程</a></li>
-                <li><a href="#">学生管理</a></li>
-                <li><a href="#">新增学生</a></li>
+<div id='t_top'>
+    <div class='t_top'>
+        <div class='t_logo'></div>
+        <ul class='t_nav'>
+            <li class="active" ><a href="index.html" >我的课程</a></li>
+            <li ><a href="tea_admin_notice.html" >管理员公告</a></li>
+        </ul>
+        <div class='t_user'>
+            <span><a href="">消息<i>10</i></a></span>
+            <div ><img src='images/img14.png' id='t_user'></div>
+        </div>
+    </div>  
+
+    <div id='t_list'>
+        <div id='t_list_top'>
+            <img src='images/img14.png'>
+            <div class='t_list_top'>
+                <span>用户名 张三</span>
+                <p>讲师</p>
+            </div>
+        </div>
+        <ul>
+            <li><a href="tea_center.html">个人中心</a></li>
+            <li><a href="">退出</a></li>
+        </ul>
+    </div>
+</div>
+<div class='wrap'>
+    <div id='t_mainBody'>
+        <div id='t_mainBodyLeft'>
+            <ul id='t_leftul'>
+                <li style='background:red;'><a href="">导航</a></li>
+                <li>当前课程:<strong style="padding-left:10px;">计算机</strong></li>
+                <li><a href="tea_notice.html">公告</a></li>
+                <li><a href="tea_prepareList.html">在线备课</a></li>
+                <li><a href="tea_classedit.html">编辑课程</a></li>
+                <li><a href="tea_data.html">课程资料</a></li>
+                <li><a href="tea_student.html">学生管理</a></li>
+                <li><a href="tea_learning_management.html">学习管理</a></li>
+                <li><a href="tea_courseEdit.html">课程管理</a></li>
+                <li><a href="tea_upload.html">上传资料</a></li>
+                <li><a href="tea_talk.html">讨论区</a></li>
             </ul>
         </div>
+        <div id='t_mainBodyRight'>
+        	<div class="place">
+                <span>位置：</span>
+                <ul class="placeul">
+                    <li><a href="#">我的课程</a></li>
+                    <li><a href="#">学生管理</a></li>
+                    <li><a href="#" class='active'>新增学生</a></li>
+                </ul>
+            </div>
+
         <div class="formbody">
             <div id="usual1" class="usual"> 
             	<div class="it1">
@@ -102,9 +92,8 @@ $(document).ready(function(e) {
             		  	</ul>
         		    </div> 
             	</div>
-          	<div id="tab1" class="tabson">
-                <br /><br />
-                <ul class="seachform" style="padding-left:200px">
+          	<div id="tab1" class="tabson  adStu ">
+                <ul class="seachform" >
                     <li><label>院系：</label>  
                         <div class="vocation">
                             <select class="select3">
@@ -115,9 +104,9 @@ $(document).ready(function(e) {
                             </select>
                         </div>
                     </li>
-                 </ul>
-                <br /><br />
-                <ul class="seachform" style="padding-left:200px">
+                 
+               
+               
                     <li><label>班级：</label>  
                         <div class="vocation">
                             <select class="select3">
@@ -128,68 +117,74 @@ $(document).ready(function(e) {
                             </select>
                         </div>
                     </li>
-                </ul>
-                <br /><br />
-                <ul class="seachform" style="padding-left:200px">
+                
+            
+               
                     <li><label>学号：</label>
                     	<input name="" type="text" class="scinput" onblur="return valinickid()" id="txtNickId" />
-                        <span style="margin-left: 200px;float: left;margin-top: -25px;color: red;"id="nickid_info"></span>
-                    </li>&nbsp;&nbsp;
-                </ul>
-                <br /><br />
-                <ul class="seachform" style="padding-left:200px">
-                    <li><label>姓名：</label>
-                        <input name="" type="text" class="scinput" onblur="return valinickname()" id="txtNickName"/>
-                        <span style="margin-left: 200px;float: left;margin-top: -25px;color: red;"id="nickname_info"></span>
+                        <span id="nickid_info" class="verifyBox">
+                            *&nbsp;学号不存在
+                        </span>
                     </li>
-                </ul>
-                <br /><br />
-              	<ul class="seachform" style="padding-left:200px">
-                    <li><label>性别：</label><input name="" type="radio"  value="" style="width: 50px;margin-top: 10px;">男</input>
-                    <input name="" type="radio"  value="" style="width: 50px;">女</input>
-                    </li>
-                </ul>
-                <br /><br />
-                <ul class="seachform" style="padding-left:200px">
-                    <li><label>Email：</label>
-                        <input name="" type="text" class="scinput" onblur="return valiemail();" id="txtEmail"/>
-                        <span style="margin-left: 200px;float: left;margin-top: -25px;color: red;"id="email_info"></span>
-                    </li>
-                </ul>
-                <br /><br />
-                <ul class="seachform" style="padding-left:245px">
-                    <li><a href="tea_student.html"><input name="" type="button" class="scbtn" value="添加"/></a></li>
-                </ul>
+               
+                
+              
+                   <li><label>姓名：</label>
+                       <input name="" type="text" class="scinput" onblur="return valinickname()" id="txtNickName"/>
+                       <span id="nickname_info" class="verifyBox">
+                           *&nbsp;姓名输入有误
+                       </span>
+                   </li>
+              
+                              
+                                 
+                   <li style="position: relative;"><label>性别：</label>
+                    <input name="gender" checked='checked' type="radio"  value="" id='male'style='position: absolute;top:12px;'><label for='male'id='nf'>男</label>
+                    <input name="gender" type="radio"  value="" id='female' style='position: absolute;top:12px;'><label for='female' id='nf1'>女</label>
+                   </li>
+               
+                             
+              
+                   <li><label>Email：</label>
+                       <input name="" type="text" class="scinput" onblur="return valiemail();" id="txtEmail"/>
+                       <span id="email_info" class="verifyBox">
+                           *&nbsp;邮箱格式不正确。
+                       </span>
+                   </li>
+              
+                              
+               
+                   <li><a href="tea_student.html"><input name="" type="button" class="scbtn" value="添加"/></a></li>
+               </ul> 
             </div> 
         
-          	<div id="tab2" class="tabson">
-                <br /><br />
-                <ul class="seachform" style="padding-left:200px">
-                    <li style="font-size:16px;">模板下载：<span style='display:inline-block'>学生信息名单模板.xml</span>
-                    <a href="#" style="font-size:16px;">下载</a>
+          	<div id="tab2" class="tabson" style="width:500px; margin-left:100px;">
+                <ul class="seachform" >
+                    <li><label >模板下载：</label><span style='display:inline-block'>学生信息名单模板.xml</span>
+                    <a href="#" class='xiazai'>下载</a>
                     </li>
-                </ul>
-                <br /><br />
-                <ul class="seachform" style="padding-left:200px">
-                    <li ><label style="font-size:16px;" >导入学生名单：</label><input type="file" class="btn"/>
-                    <a href="#" style="font-size:16px;">  &nbsp;&nbsp;&nbsp;&nbsp;导入</a></li>
-                </ul>
-                <br /><br />
-                <ul class="seachform" style="padding-left:200px">
-                    <li> <a href="tea_student.html"><input name="" type="button" class="scbtn" value="确定"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                
+                    <li ><label >导入学生名单：</label><input type="file" class="btnd"/>
+                    <a href="#" class='daoru'>导入</a></li>
+                
+               
+                
+                    <li> <a href="tea_student.html"><input name="" type="button" class="scbtn" value="确定"/></a>
                      <a href="tea_student.html"><input name="" type="button" class="scbtn" value="返回"/></a></li>
                 </ul>
             </div>  
-            </div> 
-        </div>
-  </div>
-<script src="js/t_javaScript.js"></script>
-    
-    <script type="text/javascript"> 
-        t_left();
-        $("#usual1 ul").idTabs(); 
-        $('.tablelist tbody tr:odd').addClass('odd');
-    </script>
+        </div> 
+    </div>
+</div>
+  
+<script type="text/javascript">
+    t_top(); 
+    t_left();
+    $j("#usual1 ul").idTabs(); 
+    $j('.tablelist tbody tr:odd').addClass('odd');
+
+
+</script>
 </body>
 
 </html>
